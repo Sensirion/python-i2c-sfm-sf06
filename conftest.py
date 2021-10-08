@@ -2,13 +2,15 @@
 # (c) Copyright 2021 Sensirion AG, Switzerland
 
 from __future__ import absolute_import, division, print_function
+
+import pytest
+from sensirion_i2c_adapter.i2c_channel import I2cChannel
+from sensirion_i2c_driver import I2cConnection, CrcCalculator
 from sensirion_shdlc_driver import ShdlcSerialPort, ShdlcConnection
 from sensirion_shdlc_sensorbridge import SensorBridgePort, \
     SensorBridgeShdlcDevice, SensorBridgeI2cProxy
-from sensirion_i2c_driver import I2cConnection, CrcCalculator
-from sensirion_i2c_adapter.i2c_channel import I2cChannel
+
 from sensirion_i2c_sfm_sf06.device import SfmSf06Device
-import pytest
 
 
 def pytest_addoption(parser):
@@ -68,8 +70,8 @@ def device(bridge):
     # Create SFM-SF06 device
     i2c_transceiver = SensorBridgeI2cProxy(bridge, port=SensorBridgePort.ONE)
     channel = I2cChannel(I2cConnection(i2c_transceiver),
-                             slave_address=0x29,
-                             crc=CrcCalculator(8, 0x31, 0xFF, 0x00))
+                         slave_address=0x29,
+                         crc=CrcCalculator(8, 0x31, 0xFF, 0x00))
     device = SfmSf06Device(channel)
 
     yield device

@@ -11,7 +11,22 @@
 
 from sensirion_i2c_adapter.transfer import execute_transfer
 
-from commands import *
+from commands import StartO2ContinuousMeasurement, \
+    StartAirContinuousMeasurement, \
+    StartN2OContinuousMeasurement, \
+    StartCO2ContinuousMeasurement, \
+    StartAirO2ContinuousMeasurement, \
+    StartNO2O2ContinuousMeasurement, \
+    StartC0202ContinuousMeasurement, \
+    ReadMeasurementData, \
+    UpdateConcentrationSet, \
+    UpdateConcentrationActivate, \
+    StopContinuousMeasurement, \
+    ConfigureAveraging, \
+    ReadScaleOffsetFlow, \
+    EnterSleep, \
+    ExitSleep, \
+    ReadProductIdentifier
 from sensirion_i2c_sfm_sf06.response_types import Flow, Temperature
 
 
@@ -92,7 +107,7 @@ class SfmSf06Device:
           - SFM3119
           - SFM3012
           - SFM3019
-        
+
         :param volume_fraction:
             Volume fraction of dioxigen in ‰.
         """
@@ -108,7 +123,7 @@ class SfmSf06Device:
         Supported by products:
           - SFM4300
           - SFM3013 (HeOx)
-        
+
         :param volume_fraction:
             Volume fraction of O₂ in ‰.
         """
@@ -124,7 +139,6 @@ class SfmSf06Device:
         gas mixture (lookup table) for the flow signal.
         Supported by products:
           - SFM4300
-        
         :param volume_fraction:
             Volume fraction of O₂ in ‰.
         """
@@ -156,7 +170,7 @@ class SfmSf06Device:
         This first instruction transmits the new concentration value to the flow sensor.
         This instruction refers to *Transmit concentration*. For more details see data-sheet section
         *Update Concentration*
-        
+
         :param volume_fraction:
             New O₂ volume fraction
         """
@@ -179,7 +193,7 @@ class SfmSf06Device:
         Sets and aktivates a new volume fraction of a binary gas mixtures
 
         :param volume_fraction:
-            New O₂ volume fraction 
+            New O₂ volume fraction
         """
         self.update_concentration_set(volume_fraction)
         return self.update_concentration_activate()
@@ -209,7 +223,7 @@ class SfmSf06Device:
         used in the command argument, it will be overruled by the maximal
         value of 128 samples to average.
         If no averaging is desired, set N to 1.
-        
+
         :param average_window:
             Average window configuration value.
         """

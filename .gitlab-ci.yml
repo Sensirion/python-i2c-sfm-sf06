@@ -16,7 +16,7 @@ py3p8_linux_build:
   extends: .py3p8_linux_build_v2
   variables:
     PYTEST_ADDOPTS: '-m "not needs_device"'
-    
+
 
 py3p8_64bit_win_build:
   extends: .py3p8_64bit_win_docker_build_v2
