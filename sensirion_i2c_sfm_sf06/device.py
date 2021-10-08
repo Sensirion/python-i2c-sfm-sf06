@@ -11,7 +11,7 @@
 
 from sensirion_i2c_adapter.transfer import execute_transfer
 
-from commands import StartO2ContinuousMeasurement, \
+from sensirion_i2c_sfm_sf06.commands import StartO2ContinuousMeasurement, \
     StartAirContinuousMeasurement, \
     StartN2OContinuousMeasurement, \
     StartCO2ContinuousMeasurement, \

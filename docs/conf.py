@@ -17,7 +17,7 @@ import sensirion_i2c_sfm_sf06
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # -- Project information -----------------------------------------------------
-distribution = pkg_resources.get_distribution('sensirion_i2c_sfm-sf06')
+distribution = pkg_resources.get_distribution('sensirion_i2c_sfm_sf06')
 
 project = u'sensirion-i2c-sfm-sf06'
 copyright = u'{} Sensirion AG, Switzerland'.format(datetime.now().year)

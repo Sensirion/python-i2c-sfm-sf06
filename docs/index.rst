@@ -1,5 +1,5 @@
 Sensirion SFM SF06 I²C Python Driver
-=================================
+====================================
 
 This package contains the driver for the Sensirion I²C SFM SF06 sensor family.
 It provides a hardware-independent interface which works with various

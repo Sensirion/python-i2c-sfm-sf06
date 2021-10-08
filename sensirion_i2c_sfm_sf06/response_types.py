@@ -36,12 +36,12 @@ class Flow(object):
         The read value as it is returned from the sensor.
     """
 
-    def __init__(self, value, scale=1, offset=0):
+    def __init__(self, value, scaling=1, offset=0):
         """
         Creates an instance from the received raw data.
         """
         #: The converted sensor value (raw sensor value divided by scaling)
-        self._value = (value - offset) / scale
+        self._value = (value - offset) / scaling
 
     @property
     def value(self):

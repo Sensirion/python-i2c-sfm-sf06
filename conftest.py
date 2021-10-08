@@ -17,9 +17,8 @@ def pytest_addoption(parser):
     """
     Register command line options
     """
-    parser.addoption("--serial-port", action="store", type="string")
-    parser.addoption("--serial-bitrate", action="store", type="int",
-                     default=460800)
+    parser.addoption("--serial-port", action="store", type=str)
+    parser.addoption("--serial-bitrate", action="store", type=int, default=460800)
 
 
 def _get_serial_port(config, validate=False):
@@ -72,9 +71,9 @@ def device(bridge):
     channel = I2cChannel(I2cConnection(i2c_transceiver),
                          slave_address=0x29,
                          crc=CrcCalculator(8, 0x31, 0xFF, 0x00))
-    device = SfmSf06Device(channel)
+    dev = SfmSf06Device(channel)
 
-    yield device
+    yield dev
 
     # make sure the channel is powered off after executing tests
     bridge.switch_supply_off(SensorBridgePort.ONE)
