@@ -60,7 +60,7 @@ setup(
     extras_require=extras_require,
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: BSD License',
+        'License :: OSI Approved :: BSD License',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.8',
         'Topic :: Software Development :: Libraries :: Python Modules'

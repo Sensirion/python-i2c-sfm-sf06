@@ -12,7 +12,7 @@ from pytest import mark
 EXCLUDES = []  # Regex: remember to use \. !
 
 
-root_path = path.join(path.dirname(__file__), "../..")
+root_path = path.join(path.dirname(__file__), "..")
 
 
 @mark.parametrize("package", find_packages(where=root_path, exclude=['tests', 'tests.*']))
