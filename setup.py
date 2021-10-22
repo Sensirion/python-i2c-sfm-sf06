@@ -51,7 +51,6 @@ setup(
     author='Rolf Laich',
     author_email='rolf.laich@sensirion.com',
     description='I2C driver for the Sensirion SFM_SF06 sensor family',
-    license='BSD',
     keywords='I2C SFM_SF06 Sensirion',
     url='https://sensirion.github.io/python-i2c-sfm-sf06/',
     packages=find_packages(exclude=['tests', 'tests.*']),
@@ -61,9 +60,7 @@ setup(
     extras_require=extras_require,
     classifiers=[
         'Intended Audience :: Developers',
-        'License :: Other/Proprietary License',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.5',
+        'License :: BSD License',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.8',
         'Topic :: Software Development :: Libraries :: Python Modules'
