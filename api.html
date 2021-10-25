@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Documentation &mdash; sensirion-i2c-sfm-sf06 0.1.0 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Quick Start" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> sensirion-i2c-sfm-sf06
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sfm-sf06">SFM SF06</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.device">SfmSf06Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.commands">Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.response_types">Response Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">sensirion-i2c-sfm-sf06</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API Documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sfm-sf06">
+<h2>SFM SF06<a class="headerlink" href="#sfm-sf06" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="module-sensirion_i2c_sfm_sf06.device">
+<span id="sfmsf06device"></span><h3>SfmSf06Device<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.device" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="module-sensirion_i2c_sfm_sf06.commands">
+<span id="commands"></span><h3>Commands<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.commands" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartO2ContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartAirContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartN2OContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartCO2ContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartAirO2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirO2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartNO2O2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartNO2O2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartNO2O2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartC0202ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartC0202ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartC0202ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadMeasurementData</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadMeasurementData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">UpdateConcentrationSet</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationSet.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">UpdateConcentrationActivate</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationActivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StopContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StopContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ConfigureAveraging</code><span class="sig-paren">(</span><em>average_window</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ConfigureAveraging"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>average_window</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ConfigureAveraging.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadScaleOffsetFlow</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.EnterSleep">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">EnterSleep</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#EnterSleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.EnterSleep.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.ExitSleep">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ExitSleep</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ExitSleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.ExitSleep.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadProductIdentifier</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadProductIdentifier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.__init__">
+<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-sensirion_i2c_sfm_sf06.response_types">
+<span id="response-types"></span><h3>Response Types<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.response_types" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.response_types.Temperature">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.response_types.</code><code class="descname">Temperature</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Temperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a temperature measurement value</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>scaled temperature value</strong> (<em>int</em>) – The read value as it is returned from the sensor.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.response_types.Temperature.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Temperature.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Temperature.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an instance from the received raw data.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.response_types.Flow">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.response_types.</code><code class="descname">Flow</code><span class="sig-paren">(</span><em>value</em>, <em>scaling=1</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Flow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Flow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a flow measurement value</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>scaled flow value</strong> (<em>int</em>) – The read value as it is returned from the sensor.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.response_types.Flow.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>value</em>, <em>scaling=1</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Flow.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Flow.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an instance from the received raw data.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021 Sensirion AG, Switzerland
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+        <span class="fa fa-book"> Other Versions</span>
+        v: master
+        <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+        <dl>
+            <dt>Branches</dt>
+            <dd><a href="master/api.html">master</a></dd>
+        </dl>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
