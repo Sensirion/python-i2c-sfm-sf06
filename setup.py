@@ -13,7 +13,7 @@ python_requires = '>=3.6, <4'
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
     'sensirion-i2c-driver',
-    'sensirion-i2c-adapter',
+    'sensirion-i2c-adapter~=1.0.0',
     'enum34;python_version<"3.4"',
 ]
 
@@ -51,9 +51,9 @@ setup(
     author='Rolf Laich',
     author_email='rolf.laich@sensirion.com',
     description='I2C driver for the Sensirion SFM_SF06 sensor family',
-    keywords='I2C SFM_SF06 Sensirion',
+    keywords='I2C SFM-SF06 Sensirion',
     url='https://sensirion.github.io/python-i2c-sfm-sf06/',
-    packages=find_packages(exclude=['tests', 'tests.*']),
+    packages=find_packages(exclude=['tests', 'tests.*', 'examples']),
     long_description=long_description,
     python_requires=python_requires,
     install_requires=install_requires,

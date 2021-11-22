@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 # (c) Copyright 2021 Sensirion AG, Switzerland
 
-from __future__ import absolute_import, division, print_function
-
 import pytest
 from sensirion_i2c_adapter.i2c_channel import I2cChannel
 from sensirion_i2c_driver import I2cConnection, CrcCalculator
@@ -61,15 +59,15 @@ def bridge(request):
 
 @pytest.fixture
 def device(bridge):
-    # Configure SensorBridge port 1 for SFM-SF06
+    # Configure SensorBridge port 1 for SFM-Device
     bridge.set_i2c_frequency(SensorBridgePort.ONE, frequency=100e3)
     bridge.set_supply_voltage(SensorBridgePort.ONE, voltage=5.0)
     bridge.switch_supply_on(SensorBridgePort.ONE)
 
-    # Create SFM-SF06 device
+    # Create SFM-Device device
     i2c_transceiver = SensorBridgeI2cProxy(bridge, port=SensorBridgePort.ONE)
     channel = I2cChannel(I2cConnection(i2c_transceiver),
-                         slave_address=0x29,
+                         slave_address=0x2A,  # this is the i2c address of the SFM4300
                          crc=CrcCalculator(8, 0x31, 0xFF, 0x00))
     dev = SfmSf06Device(channel)
 

@@ -55,7 +55,7 @@ Unit tests can be run with [`pytest`](https://pytest.org/):
 pip install -e .[test]                       # Install requirements
 pytest -m "not needs_device"                 # Run tests without hardware
 pytest                                       # Run all tests
-pytest -m "needs_device"  # Run all tests for SFM-SF06
+pytest -m "needs_device"  # Run all tests for sfm-sf06 device
 
 ```
 

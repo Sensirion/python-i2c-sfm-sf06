@@ -16,14 +16,14 @@ from sensirion_i2c_sfm_sf06.commands import StartO2ContinuousMeasurement, \
     StartN2OContinuousMeasurement, \
     StartCO2ContinuousMeasurement, \
     StartAirO2ContinuousMeasurement, \
-    StartNO2O2ContinuousMeasurement, \
-    StartC0202ContinuousMeasurement, \
+    StartN2OO2ContinuousMeasurement, \
+    StartCO2O2ContinuousMeasurement, \
     ReadMeasurementData, \
     UpdateConcentrationSet, \
     UpdateConcentrationActivate, \
     StopContinuousMeasurement, \
     ConfigureAveraging, \
-    ReadScaleOffsetFlow, \
+    ReadScaleOffsetUnit, \
     EnterSleep, \
     ExitSleep, \
     ReadProductIdentifier
@@ -39,18 +39,18 @@ class SfmSf06Device:
         self._flow_unit = 0
 
     def start_O2_continuous_measurement(self):
-        """
-        The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement
+        """The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement
         results can be read out through one single I2C read when the continuous measurement is running.
         The specific command code used for the start continuous measurement command selects the calibrated gas or
         binary gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM3003
-          - SFM4300
-          - SFM3119
-          - SFM3012
-          - SFM3019
+        - SFM3003
+        - SFM4300
+        - SFM3119
+        - SFM3012
+        - SFM3019
         """
+        self.read_scale_offset_unit(StartO2ContinuousMeasurement.CMD_ID)
         transfer = StartO2ContinuousMeasurement()
         return execute_transfer(self._channel, transfer)
 
@@ -61,12 +61,13 @@ class SfmSf06Device:
         The specific command code used for the start continuous measurement command selects the calibrated gas or
         binary gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM3003
-          - SFM4300
-          - SFM3119
-          - SFM3012
-          - SFM3019
+        - SFM3003
+        - SFM4300
+        - SFM3119
+        - SFM3012
+        - SFM3019
         """
+        self.read_scale_offset_unit(StartAirContinuousMeasurement.CMD_ID)
         transfer = StartAirContinuousMeasurement()
         return execute_transfer(self._channel, transfer)
 
@@ -77,9 +78,10 @@ class SfmSf06Device:
         running. The specific command code used for the start continuous measurement command selects the calibrated
         gas or binary gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM4300
-          - SFM3013 (HeOx)
+        - SFM4300
+        - SFM3013 (HeOx)
         """
+        self.read_scale_offset_unit(StartN2OContinuousMeasurement.CMD_ID)
         transfer = StartN2OContinuousMeasurement()
         return execute_transfer(self._channel, transfer)
 
@@ -90,8 +92,9 @@ class SfmSf06Device:
         The specific command code used for the start continuous measurement command selects the calibrated gas or binary
         gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM4300
+        - SFM4300
         """
+        self.read_scale_offset_unit(StartCO2ContinuousMeasurement.CMD_ID)
         transfer = StartCO2ContinuousMeasurement()
         return execute_transfer(self._channel, transfer)
 
@@ -102,35 +105,37 @@ class SfmSf06Device:
         The specific command code used for the start continuous measurement command selects the calibrated gas or binary
         gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM3003
-          - SFM4300
-          - SFM3119
-          - SFM3012
-          - SFM3019
+        - SFM3003
+        - SFM4300
+        - SFM3119
+        - SFM3012
+        - SFM3019
 
         :param volume_fraction:
             Volume fraction of dioxigen in ‰.
         """
+        self.read_scale_offset_unit(StartAirO2ContinuousMeasurement.CMD_ID)
         transfer = StartAirO2ContinuousMeasurement(volume_fraction)
         return execute_transfer(self._channel, transfer)
 
-    def start_NO2_O2_continuous_measurement(self, volume_fraction):
+    def start_N2O_O2_continuous_measurement(self, volume_fraction):
         """
         The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three
         measurement results can be read out through one single I2C read when the continuous measurement is running.
         The specific command code used for the start continuous measurement command selects the calibrated gas or binary
         gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM4300
-          - SFM3013 (HeOx)
+        - SFM4300
+        - SFM3013 (HeOx)
 
         :param volume_fraction:
             Volume fraction of O₂ in ‰.
         """
-        transfer = StartNO2O2ContinuousMeasurement(volume_fraction)
+        self.read_scale_offset_unit(StartN2OO2ContinuousMeasurement.CMD_ID)
+        transfer = StartN2OO2ContinuousMeasurement(volume_fraction)
         return execute_transfer(self._channel, transfer)
 
-    def start_C02_02_continuous_measurement(self, volume_fraction):
+    def start_CO2_O2_continuous_measurement(self, volume_fraction):
         """
         The sensor starts measuring the  CO₂ / O₂ flow and temperature and provides a status word.
         All three measurement results can be read out through one single I2C read when the continuous measurement is
@@ -138,11 +143,13 @@ class SfmSf06Device:
         The specific command code used for the start continuous measurement command selects the calibrated gas or binary
         gas mixture (lookup table) for the flow signal.
         Supported by products:
-          - SFM4300
+        - SFM4300
+
         :param volume_fraction:
             Volume fraction of O₂ in ‰.
         """
-        transfer = StartC0202ContinuousMeasurement(volume_fraction)
+        self.read_scale_offset_unit(StartCO2O2ContinuousMeasurement.CMD_ID)
+        transfer = StartCO2O2ContinuousMeasurement(volume_fraction)
         return execute_transfer(self._channel, transfer)
 
     def read_measurement_data(self):
@@ -150,6 +157,7 @@ class SfmSf06Device:
         After the command *start_xx_continuous_measurement* has been sent, the chip continuously measures and updates
         the measurement results.
         New results (flow, temperature, and status word) can be read continuously with this command.
+
         :return flow:
             Read calibrated flow signal read from the sensor.
         :return temperature:
@@ -161,7 +169,7 @@ class SfmSf06Device:
         """
         transfer = ReadMeasurementData()
         flow, temperature, status_word = execute_transfer(self._channel, transfer)
-        return Flow(flow, scale=self._scale, offset=self._offset), Temperature(temperature), status_word
+        return Flow(flow, scaling=self._scale, offset=self._offset), Temperature(temperature), status_word
 
     def update_concentration_set(self, volume_fraction):
         """
@@ -230,12 +238,15 @@ class SfmSf06Device:
         transfer = ConfigureAveraging(average_window)
         return execute_transfer(self._channel, transfer)
 
-    def read_scale_offset_flow(self):
+    def read_scale_offset_unit(self, command):
         """
         This command provides the scale factor and offset to convert flow readings into physical units. The scale factor
         and offset are specific to the calibrated gas / gas mixture and its corresponding lookup table used for the
         flow measurement. Therefore, the gas / gas mixture needs to be specified in the command argument by the command
         code of the corresponding start continuous measurement. For detailed information see data-sheet.
+
+        :param command:
+            command id of which the scale and offset shall be read
         :return scale_factor:
             Scale factor used by the sensor.
         :return offset:
@@ -243,7 +254,7 @@ class SfmSf06Device:
         :return flow_unit:
             Applicable flow unit.
         """
-        transfer = ReadScaleOffsetFlow()
+        transfer = ReadScaleOffsetUnit(command_code=command)
         self._scale, self._offset, self._flow_unit = execute_transfer(self._channel, transfer)
         return self._scale, self._offset, self._flow_unit
 
@@ -273,6 +284,7 @@ class SfmSf06Device:
         """
         This command allows to read product identifier and the serial number.
         The command can only be executed from the idle mode, i.e. when the sensor is not performing measurements
+
         :return product_identifier:
             32-bit unique product and revision number
         :return serial_number:

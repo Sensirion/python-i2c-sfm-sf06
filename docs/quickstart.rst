@@ -4,7 +4,7 @@ Quick Start
 SensorBridge Example
 --------------------
 
-Following example code shows how to use this SFM-SF06 driver with a
+The following example code shows how to use this SFM-SF06 driver with a
 Sensirion SFM4300 sensor connected to the computer using a
 `Sensirion SEK-SensorBridge`_. The driver for the SensorBridge can be installed with
 
