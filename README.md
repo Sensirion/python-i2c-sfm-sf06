@@ -1,13 +1,14 @@
-# Python I²C Driver for Sensirion SFM SF06 Sensor family
+# Python I²C Driver for Sensirion SFM-SF06 Sensor family
 
-This repository contains the Python driver to communicate with Sensirion
-SFM-SF06. For details, please
-read the [user manual](https://sensirion.github.io/).
+This repository contains the Python driver to communicate with Sensors of the
+Sensirion sensor family SFM-SF06.
+
+Information about flow sensors you can find [here](https://www.sensirion.com/flow-sensors).
 
 
 ## Supported Sensors
 
-SFM SF06 driver family:
+The SFM-SF06 driver family includes the sensors:
 
 * SFM3003
 * SFM4300
@@ -18,7 +19,7 @@ SFM SF06 driver family:
 ## Usage
 
 See user manual at
-[https://sensirion.github.io](https://sensirion.github.io/).
+[https://sensirion.github.io/python-i2c-sfm-sf06](https://sensirion.github.io/python-i2c-sfm-sf06).
 
 
 ## Development
