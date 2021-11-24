@@ -179,8 +179,6 @@
 </li>
         <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.__init__">(sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier attribute)</a>
 </li>
-        <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow.__init__">(sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow attribute)</a>
-</li>
         <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement attribute)</a>
 </li>
         <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement attribute)</a>
@@ -199,13 +197,17 @@
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.__init__">__init__() (sensirion_i2c_sfm_sf06.commands.ConfigureAveraging method)</a>
 
       <ul>
+        <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.__init__">(sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit method)</a>
+</li>
         <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement method)</a>
 </li>
-        <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement method)</a>
+        <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement method)</a>
 </li>
-        <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement method)</a>
+        <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.__init__">(sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement method)</a>
 </li>
         <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.__init__">(sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet method)</a>
+</li>
+        <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__">(sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
 </li>
         <li><a href="api.html#sensirion_i2c_sfm_sf06.response_types.Flow.__init__">(sensirion_i2c_sfm_sf06.response_types.Flow method)</a>
 </li>
@@ -218,6 +220,10 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.configure_averaging">configure_averaging() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging">ConfigureAveraging (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
   </ul></td>
@@ -226,10 +232,14 @@
 <h2 id="E">E</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.enter_sleep">enter_sleep() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.EnterSleep">EnterSleep (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.exit_sleep">exit_sleep() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ExitSleep">ExitSleep (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
   </ul></td>
@@ -246,13 +256,19 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData">ReadMeasurementData (class in sensirion_i2c_sfm_sf06.commands)</a>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data">read_measurement_data() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_product_identifier">read_product_identifier() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_scale_offset_unit">read_scale_offset_unit() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData">ReadMeasurementData (class in sensirion_i2c_sfm_sf06.commands)</a>
+</li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier">ReadProductIdentifier (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
-      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow">ReadScaleOffsetFlow (class in sensirion_i2c_sfm_sf06.commands)</a>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit">ReadScaleOffsetUnit (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -266,21 +282,39 @@
 </li>
       <li><a href="api.html#module-sensirion_i2c_sfm_sf06.response_types">sensirion_i2c_sfm_sf06.response_types (module)</a>
 </li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device">SfmSf06Device (class in sensirion_i2c_sfm_sf06.device)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement">start_air_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_Air_O2_continuous_measurement">start_Air_O2_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_continuous_measurement">start_CO2_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_O2_continuous_measurement">start_CO2_O2_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_continuous_measurement">start_N2O_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_O2_continuous_measurement">start_N2O_O2_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_O2_continuous_measurement">start_O2_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement">StartAirContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement">StartAirO2ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement">StartC0202ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
-</li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement">StartCO2ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement">StartCO2O2ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement">StartN2OContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
-      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement">StartNO2O2ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement">StartN2OO2ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement">StartO2ContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.stop_continuous_measurement">stop_continuous_measurement() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
 </li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement">StopContinuousMeasurement (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
@@ -298,10 +332,16 @@
 <h2 id="U">U</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate">UpdateConcentrationActivate (class in sensirion_i2c_sfm_sf06.commands)</a>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration">update_concentration() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_activate">update_concentration_activate() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_set">update_concentration_set() (sensirion_i2c_sfm_sf06.device.SfmSf06Device method)</a>
+</li>
+      <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate">UpdateConcentrationActivate (class in sensirion_i2c_sfm_sf06.commands)</a>
+</li>
       <li><a href="api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet">UpdateConcentrationSet (class in sensirion_i2c_sfm_sf06.commands)</a>
 </li>
   </ul></td>

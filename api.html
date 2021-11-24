@@ -91,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#sfm-sf06">SFM SF06</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sfm-sf06">SFM-SF06</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.device">SfmSf06Device</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.commands">Commands</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.response_types">Response Types</a></li>
@@ -166,9 +166,301 @@
   <div class="section" id="api-documentation">
 <h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="sfm-sf06">
-<h2>SFM SF06<a class="headerlink" href="#sfm-sf06" title="Permalink to this headline">¶</a></h2>
+<h2>SFM-SF06<a class="headerlink" href="#sfm-sf06" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="module-sensirion_i2c_sfm_sf06.device">
 <span id="sfmsf06device"></span><h3>SfmSf06Device<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.device" title="Permalink to this headline">¶</a></h3>
+<dl class="class">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.device.</code><code class="descname">SfmSf06Device</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_O2_continuous_measurement">
+<code class="descname">start_O2_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement
+results can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or
+binary gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM3003
+- SFM4300
+- SFM3119
+- SFM3012
+- SFM3019</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement">
+<code class="descname">start_air_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_air_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring both Air flow and temperature and provides a status word. All three measurement
+results can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or
+binary gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM3003
+- SFM4300
+- SFM3119
+- SFM3012
+- SFM3019</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_continuous_measurement">
+<code class="descname">start_N2O_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_N2O_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring both N₂O (<em>HeOx for SMF3012</em>) flow and temperature and provides a status word.
+All three measurement results can be read out through one single I2C read when the continuous measurement is
+running. The specific command code used for the start continuous measurement command selects the calibrated
+gas or binary gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM4300
+- SFM3013 (HeOx)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_continuous_measurement">
+<code class="descname">start_CO2_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_CO2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring both CO₂ flow and temperature and provides a status word. All three measurement
+results can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM4300</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_Air_O2_continuous_measurement">
+<code class="descname">start_Air_O2_continuous_measurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_Air_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_Air_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring the Air/O₂ flow and temperature and provides a status word. All three measurement
+results can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM3003
+- SFM4300
+- SFM3119
+- SFM3012
+- SFM3019</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – Volume fraction of dioxigen in ‰.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_O2_continuous_measurement">
+<code class="descname">start_N2O_O2_continuous_measurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_N2O_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three
+measurement results can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM4300
+- SFM3013 (HeOx)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_O2_continuous_measurement">
+<code class="descname">start_CO2_O2_continuous_measurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_CO2_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor starts measuring the  CO₂ / O₂ flow and temperature and provides a status word.
+All three measurement results can be read out through one single I2C read when the continuous measurement is
+running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.
+Supported by products:
+- SFM4300</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data">
+<code class="descname">read_measurement_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_measurement_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>After the command <em>start_xx_continuous_measurement</em> has been sent, the chip continuously measures and updates
+the measurement results.
+New results (flow, temperature, and status word) can be read continuously with this command.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return flow:</th><td class="field-body">Read calibrated flow signal read from the sensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return temperature:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Temperature scaled with a factor of 200.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">Return status_word:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Gives information about the measurement command that is currently running, information on the currently
+selected averaging mode, and the defined gas concentration of the current measurement command.
+A detailed description of the <em>status_word</em> can be found in the data sheet.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_set">
+<code class="descname">update_concentration_set</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Together with the instruction <em>update_concentration_activate</em> this instruction allows to update the
+concentration of a binary gas mixture dynamically, i.e. without exiting the running measurement mode.
+This first instruction transmits the new concentration value to the flow sensor.
+This instruction refers to <em>Transmit concentration</em>. For more details see data-sheet section
+<em>Update Concentration</em></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – New O₂ volume fraction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_activate">
+<code class="descname">update_concentration_activate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration_activate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_activate" title="Permalink to this definition">¶</a></dt>
+<dd><p>By executing this instruction the previously with <em>update_concentration_set</em> set value becomes active.
+The instruction resets the I2C address pointer to the regular result output buffer such that the measurement
+data as described by the transfer read_measurement_data are optained upon a subsequent read.
+This instruction refers to <em>Reset-i2c address pointer</em>. For more details see data-sheet section
+<em>Update Concentration</em></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration">
+<code class="descname">update_concentration</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets and aktivates a new volume fraction of a binary gas mixtures</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – New O₂ volume fraction</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.stop_continuous_measurement">
+<code class="descname">stop_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.stop_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.stop_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command stops the continuous measurement and puts
+the sensor in idle mode. After it receives the stop command,
+the sensor needs up to 0.5ms to power down the heater, enter
+idle mode and be receptive for a new command.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.configure_averaging">
+<code class="descname">configure_averaging</code><span class="sig-paren">(</span><em>average_window</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.configure_averaging"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.configure_averaging" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command configures the sensor’s averaging mode:
+1) N=0 (default): average-until-read mode (c.f. Sec. 3)
+2) 1≤N≤128: fixed-N averaging mode. N is the number of internal
+measurements that are averaged for one returned
+measurement value (i.e. the average over N flow samples,
+where N = CmdArgument, c.f. Sec. 3).
+The configured averaging mode will be used for flow measurements
+until a reset or re-execution of this command is performed. After a
+reset, averaging is set to average-until-read mode (i.e. N is set to 0).
+The highest averaging number allowed is 128. If a higher number is
+used in the command argument, it will be overruled by the maximal
+value of 128 samples to average.
+If no averaging is desired, set N to 1.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>average_window</strong> – Average window configuration value.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_scale_offset_unit">
+<code class="descname">read_scale_offset_unit</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_scale_offset_unit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_scale_offset_unit" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command provides the scale factor and offset to convert flow readings into physical units. The scale factor
+and offset are specific to the calibrated gas / gas mixture and its corresponding lookup table used for the
+flow measurement. Therefore, the gas / gas mixture needs to be specified in the command argument by the command
+code of the corresponding start continuous measurement. For detailed information see data-sheet.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>command</strong> – command id of which the scale and offset shall be read</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return scale_factor:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Scale factor used by the sensor.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return offset:</th><td class="field-body">Offset used by the sensor.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return flow_unit:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Applicable flow unit.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.enter_sleep">
+<code class="descname">enter_sleep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.enter_sleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.enter_sleep" title="Permalink to this definition">¶</a></dt>
+<dd><p>In sleep mode the sensor uses a minimum amount of power. The mode can only be entered from idle mode, i.e.
+when the sensor is not performing measurements.
+This mode is particularly useful for battery operated devices. To minimize the current in this mode, the
+complexity of the sleep mode circuit has been reduced as much as possible, which is mainly reflected by the
+way the sensor exits the sleep mode. In sleep mode the sensor cannot be soft reset.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.exit_sleep">
+<code class="descname">exit_sleep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.exit_sleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.exit_sleep" title="Permalink to this definition">¶</a></dt>
+<dd><p>The sensor exits the sleep mode and enters the idle mode when
+it receives the valid I2C address and a write bit (‘0’).
+Note that the I2C address is not acknowledged. It is necessary to
+poll the sensor to see whether the sensor has received the
+address and has woken up. This should take typically 16ms.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_product_identifier">
+<code class="descname">read_product_identifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_product_identifier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_product_identifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command allows to read product identifier and the serial number.
+The command can only be executed from the idle mode, i.e. when the sensor is not performing measurements</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Return product_identifier:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">32-bit unique product and revision number</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Return serial_number:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">64 bit unique serial number of the device</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 <div class="section" id="module-sensirion_i2c_sfm_sf06.commands">
 <span id="commands"></span><h3>Commands<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.commands" title="Permalink to this headline">¶</a></h3>
@@ -228,22 +520,22 @@
 </dd></dl>
 
 <dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartNO2O2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartNO2O2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartN2OO2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartNO2O2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartNO2O2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OO2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartC0202ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartC0202ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
+<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartCO2O2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2O2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartC0202ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartC0202ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
+<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2O2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
 </dd></dl>
 
@@ -305,11 +597,11 @@
 </dd></dl>
 
 <dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadScaleOffsetFlow</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetFlow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetFlow.__init__" title="Permalink to this definition">¶</a></dt>
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit">
+<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadScaleOffsetUnit</code><span class="sig-paren">(</span><em>command_code</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetUnit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>command_code</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetUnit.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
 </dd></dl>
 
