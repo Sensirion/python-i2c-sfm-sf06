@@ -1,8 +1,7 @@
-sensirion-i2c-sfm-sf06
+sensirion_i2c_sfm_sf06
 ======================
 
-This package contains the driver to communicate with Sensirion sensors of the SFM-SF06
-sensor family.
+This package contains the driver to communicate with a Sensirion sensor of the SFM-SF06 family over i2c.
 
 Installation and Usage
 ----------------------

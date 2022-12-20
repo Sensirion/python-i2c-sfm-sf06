@@ -1,34 +1,68 @@
-# Python I²C Driver for Sensirion SFM-SF06 Sensor family
+# Python I2C Driver for Sensirion SFM-SF06
 
-This repository contains the Python driver to communicate with Sensors of the
-Sensirion sensor family SFM-SF06.
+This repository contains the Python driver to communicate with a Sensirion sensor of the SFM-SF06 family over I2C. 
 
-Information about flow sensors you can find [here](https://www.sensirion.com/flow-sensors).
+<center><img src="images/SFM4300.png" width="300px"></center>
 
-
-## Supported Sensors
-
-The SFM-SF06 driver family includes the sensors:
-
-* SFM3003
-* SFM4300
-* SFM3119
-* SFM3013
-* SFM3019
-
-## Usage
-
-See user manual at
-[https://sensirion.github.io/python-i2c-sfm-sf06](https://sensirion.github.io/python-i2c-sfm-sf06).
+Click [here](https://sensirion.com/products/product-categories/gas-flow-sensors/) to learn more about the Sensirion SFM-SF06 sensor family.
 
 
-## Development
+Not all sensors of this driver family support all measurements.
+In case a measurement is not supported by all sensors, the products that
+support it are listed in the API description.
+
+
+
+## Supported sensor types
+
+| Sensor name   | I²C Addresses  |
+| ------------- | -------------- |
+|[SFM4300](https://sensirion.com/products/catalog/?filter_series=77ed9322-c043-4eaf-ad3c-2b55aae69cdd)| **0x2A**, 0x2B, 0x2C, 0x2D|
+|[SFM3119](https://sensirion.com/products/catalog/SFM3119/)| **0x29**|
+|[SFM3003](https://sensirion.com/products/catalog/SEK-SFM3003/)| **0x28**, 0x2D|
+|[SFM3013](https://sensirion.com/products/catalog/SEK-SFM3013/)| **0x2F**|
+|[SFM3019](https://sensirion.com/products/catalog/SEK-SFM3019/)| **0x2E**|
+
+The following instructions and examples use a *SFM4300*.
+
+
+
+## Connect the sensor
+
+You can connect your sensor over a [SEK-SensorBridge](https://developer.sensirion.com/sensirion-products/sek-sensorbridge/).
+For special setups you find the sensor pinout in the section below.
+
+<details><summary>Sensor pinout</summary>
+<p>
+<img src="images/pinout_SFM4300.png" width="300px">
+
+| *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
+|-------|---------------|:------:|----------------|------------|
+| 1 |  | ADDR |  | see data sheet section 4.1
+| 2 |  | SDA | I2C: Serial data input / output | Serial data, bidirectional
+| 3 |  | GND | Ground | 
+| 4 |  | VDD | Supply Voltage | 3.0 to 5.0V
+| 5 |  | SCL | I2C: Serial clock input | 
+| 6 |  | IRQn |  | Active low. see data sheet section 3.3
+
+
+</p>
+</details>
+
+
+## Documentation & Quickstart
+
+See the [documentation page](https://sensirion.github.io/python-i2c-sfm-sf06) for an API description and a 
+[quickstart](https://sensirion.github.io/python-i2c-sfm-sf06/execute-measurements.html) example.
+
+
+## Contributing
 
 We develop and test this driver using our company internal tools (version
 control, continuous integration, code review etc.) and automatically
 synchronize the `master` branch with GitHub. But this doesn't mean that we
 don't respond to issues or don't accept pull requests on GitHub. In fact,
-you're very welcome to open issues or create pull requests :)
+you're very welcome to open issues or create pull requests :-)
 
 ### Check coding style
 
@@ -45,37 +79,6 @@ In addition, we check the formatting of files with
 ```bash
 pip install editorconfig-checker==2.0.3   # Install requirements
 editorconfig-checker                      # Run check
-```
-
-### Run tests
-
-Unit tests can be run with [`pytest`](https://pytest.org/):
-
-```bash
-pip install -e .[test]                       # Install requirements
-pytest -m "not needs_device"                 # Run tests without hardware
-pytest                                       # Run all tests
-pytest -m "needs_device"  # Run all tests for sfm-sf06 device
-
-```
-
-The tests with the marker `needs_device` have following requirements:
-
-- The SFM-SF06 device must be connected to a
-  [SensorBridge](https://www.sensirion.com/sensorbridge/) on port 1.
-- Pass the serial port where the SensorBridge is connected with
-  `--serial-port`, e.g. `pytest --serial-port=COM7`
-- The SensorBridge must have default settings (baudrate 460800, address 0)
-
-
-### Build documentation
-
-The documentation can be built with [Sphinx](http://www.sphinx-doc.org/):
-
-```bash
-python setup.py install                        # Install package
-pip install -r docs/requirements.txt           # Install requirements
-sphinx-versioning build docs docs/_build/html  # Build documentation
 ```
 
 ## License

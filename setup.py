@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import, division, print_function
 
 import os
 import re
@@ -12,22 +11,24 @@ python_requires = '>=3.6, <4'
 
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
-    'sensirion-i2c-driver',
-    'sensirion-i2c-adapter~=1.0.0',
-    'enum34;python_version<"3.4"',
+    'sensirion-i2c-driver~=1.0.0',
+    'sensirion-driver-adapters~=2.1,>=2.1.4',
+    'sensirion-driver-support-types~=0.2.0',
+    'sensirion-shdlc-sensorbridge~=0.1.1'
 ]
 
 # Packages required for tests and docs
 extras_require = {
     'test': [
         'flake8~=3.7.8',
-        'pytest~=3.5.0',
-        'pytest-cov~=2.5.1',
-        'sensirion-shdlc-sensorbridge~=0.1.1'
+        'pytest~=6.2.5',
+        'pytest-cov~=3.0.0',
     ],
     'docs': [
-        'sphinx~=2.2.1',
-        'sphinx-rtd-theme~=0.4.3',
+        'click==8.0.4',
+        'jinja2==3.0.1',
+        'sphinx~=4.2.0',
+        'sphinx-rtd-theme~=0.5.2',
     ]
 }
 
@@ -46,14 +47,21 @@ changelog = open(os.path.join(root_path, 'CHANGELOG.rst')).read()
 long_description = readme.strip() + "\n\n" + changelog.strip() + "\n"
 
 setup(
-    name='sensirion-i2c-sfm-sf06',
+    name='sensirion_i2c_sfm_sf06',
     version=version_string,
-    author='Rolf Laich',
-    author_email='rolf.laich@sensirion.com',
-    description='I2C driver for the Sensirion SFM_SF06 sensor family',
-    keywords='I2C SFM-SF06 Sensirion',
+    author='Sensirion',
+    author_email='info@sensirion.com',
+    description='I2C driver for the Sensirion SFM-SF06 sensor family',
+    license='BSD',
+    keywords="""Sensirion SFM-SF06
+        I2C
+        SFM4300
+        SFM3119
+        SFM3003
+        SFM3013
+        SFM3019""",
     url='https://sensirion.github.io/python-i2c-sfm-sf06/',
-    packages=find_packages(exclude=['tests', 'tests.*', 'examples']),
+    packages=find_packages(exclude=['tests', 'tests.*']),
     long_description=long_description,
     python_requires=python_requires,
     install_requires=install_requires,

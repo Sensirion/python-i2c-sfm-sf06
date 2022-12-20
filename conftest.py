@@ -2,13 +2,12 @@
 # (c) Copyright 2021 Sensirion AG, Switzerland
 
 import pytest
-from sensirion_i2c_adapter.i2c_channel import I2cChannel
-from sensirion_i2c_driver import I2cConnection, CrcCalculator
+import time
 from sensirion_shdlc_driver import ShdlcSerialPort, ShdlcConnection
-from sensirion_shdlc_sensorbridge import SensorBridgePort, \
-    SensorBridgeShdlcDevice, SensorBridgeI2cProxy
-
+from sensirion_i2c_driver import I2cConnection, CrcCalculator
+from sensirion_driver_adapters.i2c_adapter.i2c_channel import I2cChannel
 from sensirion_i2c_sfm_sf06.device import SfmSf06Device
+from sensirion_shdlc_sensorbridge import SensorBridgeShdlcDevice, SensorBridgePort, SensorBridgeI2cProxy
 
 
 def pytest_addoption(parser):
@@ -58,20 +57,19 @@ def bridge(request):
 
 
 @pytest.fixture
-def device(bridge):
-    # Configure SensorBridge port 1 for SFM-Device
+def sensor(bridge):
+    # Configure SensorBridge port 1
     bridge.set_i2c_frequency(SensorBridgePort.ONE, frequency=100e3)
-    bridge.set_supply_voltage(SensorBridgePort.ONE, voltage=5.0)
+    bridge.set_supply_voltage(SensorBridgePort.ONE, voltage=3.3)
     bridge.switch_supply_on(SensorBridgePort.ONE)
 
     # Create SFM-Device device
     i2c_transceiver = SensorBridgeI2cProxy(bridge, port=SensorBridgePort.ONE)
     channel = I2cChannel(I2cConnection(i2c_transceiver),
-                         slave_address=0x2A,  # this is the i2c address of the SFM4300
-                         crc=CrcCalculator(8, 0x31, 0xFF, 0x00))
+                         slave_address=0x2A,
+                         crc=CrcCalculator(8, 0x31, 0xff, 0x0))
     dev = SfmSf06Device(channel)
-
+    time.sleep(0.1)  # some time is required to power up the device
     yield dev
-
     # make sure the channel is powered off after executing tests
     bridge.switch_supply_off(SensorBridgePort.ONE)
