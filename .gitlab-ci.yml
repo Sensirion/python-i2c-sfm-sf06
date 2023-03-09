@@ -1,4 +1,4 @@
-include: https://gitlab/Sensirion/Python/ci-config-python/raw/master/gitlab-ci-template-v2.yml
+include: https://gitlab.sensirion.lokal/Sensirion/Python/ci-config-python/raw/master/gitlab-ci-template-v2.yml
 stages:
   - prepare
   - build
@@ -34,7 +34,10 @@ py3p8_64bit_win_build:
 
 build_docs:
   stage: build
-  extends: .build_docs_v2
+  tags: [ linux, docker ]
+  image: registry.gitlab.sensirion.lokal/sensirion/docker/docker-python:3.8-20.04-2.11.0
+  variables:
+    SPHINXOPTS: "-W --keep-going"
   script:
     - python setup.py install
     - pip install -r docs/requirements.txt
@@ -66,15 +69,10 @@ deploy_stable:
 deploy_docs:
   stage: deploy
   tags: [linux, docker]
-  image: registry.gitlab.sensirion.lokal/sensirion/docker/docker-python:3.8-20.04-2.6.0
-  dependencies: []
+  image: registry.gitlab.sensirion.lokal/sensirion/docker/docker-python:3.8-20.04-2.11.0
+  dependencies: [build_docs]
   only: [master, tags]
   script:
-    - python setup.py install
-    - pip install -r docs/requirements.txt
-    - cd docs
-    - make html
-  after_script:
     - chmod 777 ./ci/set_git_config.sh
     - ./ci/set_git_config.sh
     - chmod 777 ./ci/checkin_doc.sh
