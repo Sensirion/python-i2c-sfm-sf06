@@ -1,73 +1,36 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>sensirion_i2c_sfm_sf06.commands &mdash; sensirion-i2c-sfm-sf06 0.1.0 documentation</title>
-  
-
-  
-  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sensirion_i2c_sfm_sf06.commands &mdash; sensirion_i2c_sfm_sf06 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
-  <link rel="stylesheet" href="../../_static/banner.css" type="text/css" />
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="../../index.html" class="icon icon-home"> sensirion-i2c-sfm-sf06
-          
-
-          
+            <a href="../../index.html" class="icon icon-home"> sensirion_i2c_sfm_sf06
           </a>
-
-          
-            
-            
               <div class="version">
-                0.1.0
+                1.0.0
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -75,324 +38,423 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../api.html">API Documentation</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">sensirion-i2c-sfm-sf06</a>
-        
+          <a href="../../index.html">sensirion_i2c_sfm_sf06</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../index.html">Module code</a> &raquo;</li>
-        
       <li>sensirion_i2c_sfm_sf06.commands</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <h1>Source code for sensirion_i2c_sfm_sf06.commands</h1><div class="highlight"><pre>
 <span></span><span class="ch">#!/usr/bin/env python</span>
 <span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="c1">#</span>
-<span class="c1"># (c) Copyright 2021 Sensirion AG, Switzerland</span>
+<span class="c1"># (c) Copyright 2023 Sensirion AG, Switzerland</span>
 <span class="c1">#</span>
 <span class="c1">#     THIS FILE IS AUTOMATICALLY GENERATED!</span>
 <span class="c1">#</span>
-<span class="c1"># Generator:    sensirion-driver-generator 0.1.0</span>
+<span class="c1"># Generator:    sensirion-driver-generator 0.20.0</span>
 <span class="c1"># Product:      sfm_sf06</span>
 <span class="c1"># Version:      1.0</span>
 <span class="c1">#</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">The transfer classes specify the data that is transferred between host and sensor. The generated transfer classes</span>
+<span class="sd">are used by the driver class and not intended for direct use.</span>
+<span class="sd">&quot;&quot;&quot;</span>
 
-<span class="kn">from</span> <span class="nn">sensirion_i2c_adapter.transfer</span> <span class="kn">import</span> <span class="n">Transfer</span><span class="p">,</span> <span class="n">TxData</span><span class="p">,</span> <span class="n">RxData</span>
+<span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">from</span> <span class="nn">sensirion_driver_adapters.transfer</span> <span class="kn">import</span> <span class="n">Transfer</span>
+<span class="kn">from</span> <span class="nn">sensirion_driver_adapters.rx_tx_data</span> <span class="kn">import</span> <span class="n">TxData</span><span class="p">,</span> <span class="n">RxData</span>
+<span class="kn">from</span> <span class="nn">sensirion_driver_support_types.bitfield</span> <span class="kn">import</span> <span class="n">BitField</span><span class="p">,</span> <span class="n">BitfieldContainer</span>
+
+
+<div class="viewcode-block" id="ErrorCodeT"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ErrorCodeT">[docs]</a><span class="k">class</span> <span class="nc">ErrorCodeT</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">I2C_ERROR</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">TIMEOUT</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="fm">__int__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span></div>
+
+
+<div class="viewcode-block" id="StatusWordT"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StatusWordT">[docs]</a><span class="k">class</span> <span class="nc">StatusWordT</span><span class="p">(</span><span class="n">BitfieldContainer</span><span class="p">):</span>
+    <span class="n">command_code</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">exp_smoothing_flag</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">11</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">avg_mode_flag</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">gas_conc</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="FlowUnitT"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.FlowUnitT">[docs]</a><span class="k">class</span> <span class="nc">FlowUnitT</span><span class="p">(</span><span class="n">BitfieldContainer</span><span class="p">):</span>
+    <span class="n">prefix</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">time_base</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="n">unit</span> <span class="o">=</span> <span class="n">BitField</span><span class="p">(</span><span class="n">offset</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartO2ContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartO2ContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement results can</span>
+<span class="sd">    be read out through one single I2C read when the continuous measurement is running. The specific command code used for the</span>
+<span class="sd">    start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM3003</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM3119</span>
+<span class="sd">      - SFM3013</span>
+<span class="sd">      - SFM3019</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3603</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="StartO2ContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.012</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartAirContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartAirContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring both Air flow and temperature and provides a status word. All three measurement results can</span>
+<span class="sd">    be read out through one single I2C read when the continuous measurement is running. The specific command code used for the</span>
+<span class="sd">    start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM3003</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM3119</span>
+<span class="sd">      - SFM3013</span>
+<span class="sd">      - SFM3019</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3608</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="StartAirContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartN2OContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartN2OContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring both N₂O (*HeOx for SMF3012*) flow and temperature and provides a status word. All three measurement results</span>
+<span class="sd">    can be read out through one single I2C read when the continuous measurement is running. The specific command code used</span>
+<span class="sd">    for the start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow</span>
+<span class="sd">    signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM3013 (HeOx)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3615</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="StartN2OContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.012</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartCO2ContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartCO2ContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring both CO₂ flow and temperature and provides a status word. All three measurement results</span>
+<span class="sd">    can be read out through one single I2C read when the continuous measurement is running.</span>
+<span class="sd">    The specific command code used for the start continuous measurement command selects the calibrated gas or binary</span>
+<span class="sd">    gas mixture (lookup table) for the flow signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x361e</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="StartCO2ContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.012</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartAirO2ContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartAirO2ContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring the Air/O₂ flow and temperature and provides a status word. All three measurement results</span>
+<span class="sd">    can be read out through one single I2C read when the continuous measurement is running.</span>
+<span class="sd">    The specific command code used for the start continuous measurement command selects the calibrated gas or binary</span>
+<span class="sd">    gas mixture (lookup table) for the flow signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM3003</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM3119</span>
+<span class="sd">      - SFM3013</span>
+<span class="sd">      - SFM3019</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3632</span>
 
-<div class="viewcode-block" id="StartAirO2ContinuousMeasurement.__init__"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span>
+<div class="viewcode-block" id="StartAirO2ContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.012</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartN2OO2ContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartN2OO2ContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three measurement results</span>
+<span class="sd">    can be read out through one single I2C read when the continuous measurement is running.</span>
+<span class="sd">    The specific command code used for the start continuous measurement command selects the calibrated gas or binary</span>
+<span class="sd">    gas mixture (lookup table) for the flow signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM3013 (HeOx)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3639</span>
 
-<div class="viewcode-block" id="StartN2OO2ContinuousMeasurement.__init__"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span>
+<div class="viewcode-block" id="StartN2OO2ContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.012</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StartCO2O2ContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartCO2O2ContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor starts measuring the  CO₂ / O₂ flow and temperature and provides a status word. All three measurement results</span>
+<span class="sd">    can be read out through one single I2C read when the continuous measurement is running.</span>
+<span class="sd">    The specific command code used for the start continuous measurement command selects the calibrated gas or binary</span>
+<span class="sd">    gas mixture (lookup table) for the flow signal.</span>
+
+<span class="sd">    Supported by products:</span>
+<span class="sd">      - SFM4300</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3646</span>
 
-<div class="viewcode-block" id="StartCO2O2ContinuousMeasurement.__init__"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span>
+<div class="viewcode-block" id="StartCO2O2ContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.012</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ReadMeasurementData"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData">[docs]</a><span class="k">class</span> <span class="nc">ReadMeasurementData</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    After the command *start_xx_continuous_measurement* has been sent, the chip continuously measures and updates the</span>
+<span class="sd">    measurement results.</span>
+<span class="sd">    New results (flow, temperature, and status word) can be read continuously with this command.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="kc">None</span>
+<div class="viewcode-block" id="ReadMeasurementData.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">None</span></div>
 
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;hhH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="UpdateConcentrationSet"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet">[docs]</a><span class="k">class</span> <span class="nc">UpdateConcentrationSet</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Together with the instruction *update_concentration_activate* this instruction allows to update the concentration</span>
+<span class="sd">    of a binary gas mixture dynamically, i.e. without exiting the running measurement mode.</span>
+<span class="sd">    This first instruction transmits the new concentration value to the flow sensor.</span>
+<span class="sd">    This instruction refers to *Transmit concentration*. For more details see data-sheet section *Update Concentration*</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0xe17d</span>
 
-<div class="viewcode-block" id="UpdateConcentrationSet.__init__"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">volume_fraction</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span> <span class="o">=</span> <span class="n">volume_fraction</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span>
+<div class="viewcode-block" id="UpdateConcentrationSet.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_volume_fraction</span><span class="p">])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="UpdateConcentrationActivate"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate">[docs]</a><span class="k">class</span> <span class="nc">UpdateConcentrationActivate</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    By executing this instruction the previously with *update_concentration_set* set value becomes active.</span>
+<span class="sd">    The instruction resets the I2C address pointer to the regular result output buffer such that the measurement</span>
+<span class="sd">    data as described by the transfer read_measurement_data are optained upon a subsequent read.</span>
+<span class="sd">    This instruction refers to *Reset-i2c address pointer*. For more details see data-sheet section *Update Concentration*</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0xe000</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="UpdateConcentrationActivate.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="StopContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StopContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This command stops the continuous measurement and puts</span>
+<span class="sd">    the sensor in idle mode. After it receives the stop command,</span>
+<span class="sd">    the sensor needs up to 0.5ms to power down the heater, enter</span>
+<span class="sd">    idle mode and be receptive for a new command.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3ff9</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="StopContinuousMeasurement.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ConfigureAveraging"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging">[docs]</a><span class="k">class</span> <span class="nc">ConfigureAveraging</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This command configures the sensor’s averaging mode:</span>
+<span class="sd">      - N=0 (default): average-until-read mode (c.f. Sec. 3)</span>
+<span class="sd">      - 1≤N≤128: fixed-N averaging mode. N is the number of internal</span>
+<span class="sd">        measurements that are averaged for one returned</span>
+<span class="sd">        measurement value (i.e. the average over N flow samples,</span>
+<span class="sd">        where N = CmdArgument, c.f. Sec. 3).</span>
+
+<span class="sd">    The configured averaging mode will be used for flow measurements</span>
+<span class="sd">    until a reset or re-execution of this command is performed. After a</span>
+<span class="sd">    reset, averaging is set to average-until-read mode (i.e. N is set to 0).</span>
+<span class="sd">    The highest averaging number allowed is 128. If a higher number is</span>
+<span class="sd">    used in the command argument, it will be overruled by the maximal</span>
+<span class="sd">    value of 128 samples to average.</span>
+<span class="sd">    If no averaging is desired, set N to 1.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x366a</span>
 
-<div class="viewcode-block" id="ConfigureAveraging.__init__"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">average_window</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_average_window</span> <span class="o">=</span> <span class="n">average_window</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">average_window</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_average_window</span> <span class="o">=</span> <span class="n">average_window</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_average_window</span><span class="p">])</span>
+<div class="viewcode-block" id="ConfigureAveraging.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_average_window</span><span class="p">])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ReadScaleOffsetUnit"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit">[docs]</a><span class="k">class</span> <span class="nc">ReadScaleOffsetUnit</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This command provides the scale factor and offset to convert flow readings into physical units. The scale factor</span>
+<span class="sd">    and offset are specific to the calibrated gas / gas mixture and its corresponding lookup table used for the</span>
+<span class="sd">    flow measurement. Therefore, the gas / gas mixture needs to be specified in the command argument by the command code</span>
+<span class="sd">    of the corresponding start continuous measurement. For detailed information see data-sheet.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3661</span>
 
-<div class="viewcode-block" id="ReadScaleOffsetUnit.__init__"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.__init__">[docs]</a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command_code</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_command_code</span> <span class="o">=</span> <span class="n">command_code</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command_code</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_command_code</span> <span class="o">=</span> <span class="n">command_code</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_command_code</span><span class="p">])</span>
+<div class="viewcode-block" id="ReadScaleOffsetUnit.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">_command_code</span><span class="p">])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;HH&#39;</span><span class="p">)</span>
     <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;hhH&#39;</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="EnterSleep"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.EnterSleep">[docs]</a><span class="k">class</span> <span class="nc">EnterSleep</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    In sleep mode the sensor uses a minimum amount of power. The mode can only be entered from idle mode, i.e. when the</span>
+<span class="sd">    sensor is not performing measurements.</span>
+<span class="sd">    This mode is particularly useful for battery operated devices. To minimize the current in this mode, the complexity of the sleep</span>
+<span class="sd">    mode circuit has been reduced as much as possible, which is mainly reflected by the way the sensor exits the sleep mode. In</span>
+<span class="sd">    sleep mode the sensor cannot be soft reset.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3677</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="EnterSleep.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.EnterSleep.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ExitSleep"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ExitSleep">[docs]</a><span class="k">class</span> <span class="nc">ExitSleep</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The sensor exits the sleep mode and enters the idle mode when</span>
+<span class="sd">    it receives the valid I2C address and a write bit (‘0’).</span>
+<span class="sd">    Note that the I2C address is not acknowledged. It is necessary to</span>
+<span class="sd">    poll the sensor to see whether the sensor has received the</span>
+<span class="sd">    address and has woken up. This should take typically 16ms.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x0</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ExitSleep.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ExitSleep.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
-    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+    <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;B&#39;</span><span class="p">,</span> <span class="n">device_busy_delay</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">slave_address</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">ignore_ack</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ReadProductIdentifier"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier">[docs]</a><span class="k">class</span> <span class="nc">ReadProductIdentifier</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This command allows to read product identifier and the serial number.</span>
+<span class="sd">    The command can only be executed from the idle mode, i.e. when the sensor is not performing measurements</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0xe102</span>
 
-    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span>
+<div class="viewcode-block" id="ReadProductIdentifier.pack"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.pack">[docs]</a>    <span class="k">def</span> <span class="nf">pack</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tx_data</span><span class="o">.</span><span class="n">pack</span><span class="p">([])</span></div>
 
     <span class="n">tx</span> <span class="o">=</span> <span class="n">TxData</span><span class="p">(</span><span class="n">CMD_ID</span><span class="p">,</span> <span class="s1">&#39;&gt;H&#39;</span><span class="p">)</span>
-    <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="s1">&#39;&gt;I8s&#39;</span><span class="p">)</span></div>
+    <span class="n">rx</span> <span class="o">=</span> <span class="n">RxData</span><span class="p">(</span><span class="n">descriptor</span><span class="o">=</span><span class="s1">&#39;&gt;I8B&#39;</span><span class="p">,</span> <span class="n">convert_to_int</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
 </pre></div>
 
            </div>
-           
           </div>
           <footer>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
-
-    </p>
+    <p>&#169; Copyright 2023 Sensirion AG, Switzerland.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-        <span class="fa fa-book"> Other Versions</span>
-        v: master
-        <span class="fa fa-caret-down"></span>
-    </span>
-    <div class="rst-other-versions">
-        <dl>
-            <dt>Tags</dt>
-            <dd><a href="../../0.1.0/index.html">0.1.0</a></dd>
-        </dl>
-        <dl>
-            <dt>Branches</dt>
-            <dd><a href="../../master/_modules/sensirion_i2c_sfm_sf06/commands.html">master</a></dd>
-        </dl>
-    </div>
-</div>
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

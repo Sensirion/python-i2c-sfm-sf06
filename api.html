@@ -1,74 +1,38 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>API Documentation &mdash; sensirion-i2c-sfm-sf06 0.1.0 documentation</title>
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Documentation &mdash; sensirion_i2c_sfm_sf06 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
     <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-  
-  
-
-  
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
-  <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Quick Start" href="quickstart.html" /> 
+    <link rel="prev" title="Build documentation" href="build-documentation.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="index.html" class="icon icon-home"> sensirion-i2c-sfm-sf06
-          
-
-          
+            <a href="index.html" class="icon icon-home"> sensirion_i2c_sfm_sf06
           </a>
-
-          
-            
-            
               <div class="version">
-                0.1.0
+                1.0.0
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -76,363 +40,317 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#sfm-sf06">SFM-SF06</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.device">SfmSf06Device</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.commands">Commands</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.response_types">Response Types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-sensirion_i2c_sfm_sf06.result_types">Result Types</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">sensirion-i2c-sfm-sf06</a>
-        
+          <a href="index.html">sensirion_i2c_sfm_sf06</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
       <li>API Documentation</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="api-documentation">
-<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="sfm-sf06">
-<h2>SFM-SF06<a class="headerlink" href="#sfm-sf06" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="module-sensirion_i2c_sfm_sf06.device">
-<span id="sfmsf06device"></span><h3>SfmSf06Device<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.device" title="Permalink to this headline">¶</a></h3>
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.device.</code><code class="descname">SfmSf06Device</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>channel</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+             
+  <section id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline"></a></h1>
+<section id="sfm-sf06">
+<h2>SFM-SF06<a class="headerlink" href="#sfm-sf06" title="Permalink to this headline"></a></h2>
+<section id="module-sensirion_i2c_sfm_sf06.device">
+<span id="sfmsf06device"></span><h3>SfmSf06Device<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.device" title="Permalink to this headline"></a></h3>
+<p>The class SfmSf06DeviceBase implements the low level interface of the sensor.
+The class SfmSf06Device extends the SfmSf06DeviceBase. It provides additional functions to ease the use of the
+sensor.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.device.</span></span><span class="sig-name descname"><span class="pre">SfmSf06DeviceBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channel</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase" title="Permalink to this definition"></a></dt>
+<dd><p>Low level API implementation of SFM_SF06</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channel</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.channel">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">channel</span></span><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.channel" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_o2_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement results can
+be read out through one single I2C read when the continuous measurement is running. The specific command code used for the
+start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM3003</p></li>
+<li><p>SFM4300</p></li>
+<li><p>SFM3119</p></li>
+<li><p>SFM3013</p></li>
+<li><p>SFM3019</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_O2_continuous_measurement">
-<code class="descname">start_O2_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement
-results can be read out through one single I2C read when the continuous measurement is running.
-The specific command code used for the start continuous measurement command selects the calibrated gas or
-binary gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM3003
-- SFM4300
-- SFM3119
-- SFM3012
-- SFM3019</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_air_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_air_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_air_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_air_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both Air flow and temperature and provides a status word. All three measurement results can
+be read out through one single I2C read when the continuous measurement is running. The specific command code used for the
+start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM3003</p></li>
+<li><p>SFM4300</p></li>
+<li><p>SFM3119</p></li>
+<li><p>SFM3013</p></li>
+<li><p>SFM3019</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement">
-<code class="descname">start_air_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_air_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring both Air flow and temperature and provides a status word. All three measurement
-results can be read out through one single I2C read when the continuous measurement is running.
-The specific command code used for the start continuous measurement command selects the calibrated gas or
-binary gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM3003
-- SFM4300
-- SFM3119
-- SFM3012
-- SFM3019</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_n2o_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_n2o_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_n2o_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_n2o_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both N₂O (<em>HeOx for SMF3012</em>) flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running. The specific command code used
+for the start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow
+signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+<li><p>SFM3013 (HeOx)</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_continuous_measurement">
-<code class="descname">start_N2O_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_N2O_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring both N₂O (<em>HeOx for SMF3012</em>) flow and temperature and provides a status word.
-All three measurement results can be read out through one single I2C read when the continuous measurement is
-running. The specific command code used for the start continuous measurement command selects the calibrated
-gas or binary gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM4300
-- SFM3013 (HeOx)</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_continuous_measurement">
-<code class="descname">start_CO2_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_CO2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring both CO₂ flow and temperature and provides a status word. All three measurement
-results can be read out through one single I2C read when the continuous measurement is running.
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_co2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_co2_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_co2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_co2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both CO₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
 The specific command code used for the start continuous measurement command selects the calibrated gas or binary
-gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM4300</p>
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_Air_O2_continuous_measurement">
-<code class="descname">start_Air_O2_continuous_measurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_Air_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_Air_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring the Air/O₂ flow and temperature and provides a status word. All three measurement
-results can be read out through one single I2C read when the continuous measurement is running.
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_air_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_air_o2_continuous_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_air_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_air_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring the Air/O₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
 The specific command code used for the start continuous measurement command selects the calibrated gas or binary
-gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM3003
-- SFM4300
-- SFM3119
-- SFM3012
-- SFM3019</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – Volume fraction of dioxigen in ‰.</td>
-</tr>
-</tbody>
-</table>
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM3003</p></li>
+<li><p>SFM4300</p></li>
+<li><p>SFM3119</p></li>
+<li><p>SFM3013</p></li>
+<li><p>SFM3019</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of dioxigen in ‰.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_O2_continuous_measurement">
-<code class="descname">start_N2O_O2_continuous_measurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_N2O_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_N2O_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three
-measurement results can be read out through one single I2C read when the continuous measurement is running.
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_n2o_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_n2o_o2_continuous_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_n2o_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_n2o_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
 The specific command code used for the start continuous measurement command selects the calibrated gas or binary
-gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM4300
-- SFM3013 (HeOx)</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</td>
-</tr>
-</tbody>
-</table>
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+<li><p>SFM3013 (HeOx)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_O2_continuous_measurement">
-<code class="descname">start_CO2_O2_continuous_measurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_CO2_O2_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_CO2_O2_continuous_measurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>The sensor starts measuring the  CO₂ / O₂ flow and temperature and provides a status word.
-All three measurement results can be read out through one single I2C read when the continuous measurement is
-running.
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_co2_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_co2_o2_continuous_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.start_co2_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.start_co2_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring the  CO₂ / O₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
 The specific command code used for the start continuous measurement command selects the calibrated gas or binary
-gas mixture (lookup table) for the flow signal.
-Supported by products:
-- SFM4300</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</td>
-</tr>
-</tbody>
-</table>
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data">
-<code class="descname">read_measurement_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_measurement_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data" title="Permalink to this definition">¶</a></dt>
-<dd><p>After the command <em>start_xx_continuous_measurement</em> has been sent, the chip continuously measures and updates
-the measurement results.
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.read_measurement_data">
+<span class="sig-name descname"><span class="pre">read_measurement_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.read_measurement_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.read_measurement_data" title="Permalink to this definition"></a></dt>
+<dd><p>After the command <em>start_xx_continuous_measurement</em> has been sent, the chip continuously measures and updates the
+measurement results.
 New results (flow, temperature, and status word) can be read continuously with this command.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return flow:</th><td class="field-body">Read calibrated flow signal read from the sensor.</td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">Return temperature:</th></tr>
-<tr class="field-even field"><td>&#160;</td><td class="field-body">Temperature scaled with a factor of 200.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name" colspan="2">Return status_word:</th></tr>
-<tr class="field-odd field"><td>&#160;</td><td class="field-body">Gives information about the measurement command that is currently running, information on the currently
-selected averaging mode, and the defined gas concentration of the current measurement command.
-A detailed description of the <em>status_word</em> can be found in the data sheet.</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return flow</dt>
+<dd class="field-odd"><p>Calibrated flow signal.</p>
+</dd>
+<dt class="field-even">Return temperature</dt>
+<dd class="field-even"><p>Calibrated temperature.</p>
+</dd>
+<dt class="field-odd">Return status_word</dt>
+<dd class="field-odd"><p>Gives information about the measurement command that is currently running, information on the currently selected
+averaging mode, and the defined gas concentration of the current measurement command.
+A detailed description of the <em>status_word</em> can be found in the data sheet.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_set">
-<code class="descname">update_concentration_set</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration_set"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_set" title="Permalink to this definition">¶</a></dt>
-<dd><p>Together with the instruction <em>update_concentration_activate</em> this instruction allows to update the
-concentration of a binary gas mixture dynamically, i.e. without exiting the running measurement mode.
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.update_concentration_set">
+<span class="sig-name descname"><span class="pre">update_concentration_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.update_concentration_set"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.update_concentration_set" title="Permalink to this definition"></a></dt>
+<dd><p>Together with the instruction <em>update_concentration_activate</em> this instruction allows to update the concentration
+of a binary gas mixture dynamically, i.e. without exiting the running measurement mode.
 This first instruction transmits the new concentration value to the flow sensor.
-This instruction refers to <em>Transmit concentration</em>. For more details see data-sheet section
-<em>Update Concentration</em></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – New O₂ volume fraction</td>
-</tr>
-</tbody>
-</table>
+This instruction refers to <em>Transmit concentration</em>. For more details see data-sheet section <em>Update Concentration</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Fraction value</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_activate">
-<code class="descname">update_concentration_activate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration_activate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration_activate" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.update_concentration_activate">
+<span class="sig-name descname"><span class="pre">update_concentration_activate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.update_concentration_activate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.update_concentration_activate" title="Permalink to this definition"></a></dt>
 <dd><p>By executing this instruction the previously with <em>update_concentration_set</em> set value becomes active.
 The instruction resets the I2C address pointer to the regular result output buffer such that the measurement
 data as described by the transfer read_measurement_data are optained upon a subsequent read.
-This instruction refers to <em>Reset-i2c address pointer</em>. For more details see data-sheet section
-<em>Update Concentration</em></p>
+This instruction refers to <em>Reset-i2c address pointer</em>. For more details see data-sheet section <em>Update Concentration</em></p>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration">
-<code class="descname">update_concentration</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets and aktivates a new volume fraction of a binary gas mixtures</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>volume_fraction</strong> – New O₂ volume fraction</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.stop_continuous_measurement">
-<code class="descname">stop_continuous_measurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.stop_continuous_measurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.stop_continuous_measurement" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.stop_continuous_measurement">
+<span class="sig-name descname"><span class="pre">stop_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.stop_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.stop_continuous_measurement" title="Permalink to this definition"></a></dt>
 <dd><p>This command stops the continuous measurement and puts
 the sensor in idle mode. After it receives the stop command,
 the sensor needs up to 0.5ms to power down the heater, enter
 idle mode and be receptive for a new command.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.configure_averaging">
-<code class="descname">configure_averaging</code><span class="sig-paren">(</span><em>average_window</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.configure_averaging"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.configure_averaging" title="Permalink to this definition">¶</a></dt>
-<dd><p>This command configures the sensor’s averaging mode:
-1) N=0 (default): average-until-read mode (c.f. Sec. 3)
-2) 1≤N≤128: fixed-N averaging mode. N is the number of internal
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.configure_averaging">
+<span class="sig-name descname"><span class="pre">configure_averaging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">average_window</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.configure_averaging"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.configure_averaging" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>This command configures the sensor’s averaging mode:</dt><dd><ul class="simple">
+<li><p>N=0 (default): average-until-read mode (c.f. Sec. 3)</p></li>
+<li><p>1≤N≤128: fixed-N averaging mode. N is the number of internal
 measurements that are averaged for one returned
 measurement value (i.e. the average over N flow samples,
-where N = CmdArgument, c.f. Sec. 3).
-The configured averaging mode will be used for flow measurements
+where N = CmdArgument, c.f. Sec. 3).</p></li>
+</ul>
+</dd>
+</dl>
+<p>The configured averaging mode will be used for flow measurements
 until a reset or re-execution of this command is performed. After a
 reset, averaging is set to average-until-read mode (i.e. N is set to 0).
 The highest averaging number allowed is 128. If a higher number is
 used in the command argument, it will be overruled by the maximal
 value of 128 samples to average.
 If no averaging is desired, set N to 1.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>average_window</strong> – Average window configuration value.</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>average_window</strong> – Average window configuration value.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_scale_offset_unit">
-<code class="descname">read_scale_offset_unit</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_scale_offset_unit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_scale_offset_unit" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.read_scale_offset_unit">
+<span class="sig-name descname"><span class="pre">read_scale_offset_unit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command_code</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.read_scale_offset_unit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.read_scale_offset_unit" title="Permalink to this definition"></a></dt>
 <dd><p>This command provides the scale factor and offset to convert flow readings into physical units. The scale factor
 and offset are specific to the calibrated gas / gas mixture and its corresponding lookup table used for the
-flow measurement. Therefore, the gas / gas mixture needs to be specified in the command argument by the command
-code of the corresponding start continuous measurement. For detailed information see data-sheet.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>command</strong> – command id of which the scale and offset shall be read</td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">Return scale_factor:</th></tr>
-<tr class="field-even field"><td>&#160;</td><td class="field-body">Scale factor used by the sensor.</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return offset:</th><td class="field-body">Offset used by the sensor.</td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">Return flow_unit:</th></tr>
-<tr class="field-even field"><td>&#160;</td><td class="field-body">Applicable flow unit.</td>
-</tr>
-</tbody>
-</table>
+flow measurement. Therefore, the gas / gas mixture needs to be specified in the command argument by the command code
+of the corresponding start continuous measurement. For detailed information see data-sheet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>command_code</strong> – Code of measurement from which we want to have that information.</p>
+</dd>
+<dt class="field-even">Return flow_scale_factor</dt>
+<dd class="field-even"><p>Scale factor used by the sensor.</p>
+</dd>
+<dt class="field-odd">Return flow_offset</dt>
+<dd class="field-odd"><p>Offset used by the sensor.</p>
+</dd>
+<dt class="field-even">Return flow_unit</dt>
+<dd class="field-even"><p>Applicable flow unit.</p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.enter_sleep">
-<code class="descname">enter_sleep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.enter_sleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.enter_sleep" title="Permalink to this definition">¶</a></dt>
-<dd><p>In sleep mode the sensor uses a minimum amount of power. The mode can only be entered from idle mode, i.e.
-when the sensor is not performing measurements.
-This mode is particularly useful for battery operated devices. To minimize the current in this mode, the
-complexity of the sleep mode circuit has been reduced as much as possible, which is mainly reflected by the
-way the sensor exits the sleep mode. In sleep mode the sensor cannot be soft reset.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.enter_sleep">
+<span class="sig-name descname"><span class="pre">enter_sleep</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.enter_sleep"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.enter_sleep" title="Permalink to this definition"></a></dt>
+<dd><p>In sleep mode the sensor uses a minimum amount of power. The mode can only be entered from idle mode, i.e. when the
+sensor is not performing measurements.
+This mode is particularly useful for battery operated devices. To minimize the current in this mode, the complexity of the sleep
+mode circuit has been reduced as much as possible, which is mainly reflected by the way the sensor exits the sleep mode. In
+sleep mode the sensor cannot be soft reset.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.exit_sleep">
-<code class="descname">exit_sleep</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.exit_sleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.exit_sleep" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.exit_sleep">
+<span class="sig-name descname"><span class="pre">exit_sleep</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.exit_sleep"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.exit_sleep" title="Permalink to this definition"></a></dt>
 <dd><p>The sensor exits the sleep mode and enters the idle mode when
 it receives the valid I2C address and a write bit (‘0’).
 Note that the I2C address is not acknowledged. It is necessary to
@@ -440,315 +358,714 @@ poll the sensor to see whether the sensor has received the
 address and has woken up. This should take typically 16ms.</p>
 </dd></dl>
 
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_product_identifier">
-<code class="descname">read_product_identifier</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_product_identifier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_product_identifier" title="Permalink to this definition">¶</a></dt>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.read_product_identifier">
+<span class="sig-name descname"><span class="pre">read_product_identifier</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06DeviceBase.read_product_identifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06DeviceBase.read_product_identifier" title="Permalink to this definition"></a></dt>
 <dd><p>This command allows to read product identifier and the serial number.
 The command can only be executed from the idle mode, i.e. when the sensor is not performing measurements</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name" colspan="2">Return product_identifier:</th></tr>
-<tr class="field-odd field"><td>&#160;</td><td class="field-body">32-bit unique product and revision number</td>
-</tr>
-<tr class="field-even field"><th class="field-name" colspan="2">Return serial_number:</th></tr>
-<tr class="field-even field"><td>&#160;</td><td class="field-body">64 bit unique serial number of the device</td>
-</tr>
-</tbody>
-</table>
+<dl class="field-list simple">
+<dt class="field-odd">Return product_identifier</dt>
+<dd class="field-odd"><p>32-bit unique product and revision number</p>
+</dd>
+<dt class="field-even">Return serial_number</dt>
+<dd class="field-even"><p>64 bit unique serial number of the device</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-sensirion_i2c_sfm_sf06.commands">
-<span id="commands"></span><h3>Commands<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.commands" title="Permalink to this headline">¶</a></h3>
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartO2ContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.device.</span></span><span class="sig-name descname"><span class="pre">SfmSf06Device</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channel</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device" title="Permalink to this definition"></a></dt>
+<dd><p>Driver class implementation of SFM_SF06</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.sf06">
+<span class="sig-name descname"><span class="pre">sf06</span></span><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.sf06" title="Permalink to this definition"></a></dt>
+<dd><p>Access to base class</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">channel</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.__init__" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_o2_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start measurement and update internal state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_air_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_air_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start measurement and update internal state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_n2o_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_n2o_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_n2o_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_n2o_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start NO2 measurement and readout the corresponding scale factor from the sensor</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_co2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_co2_continuous_measurement</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_co2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_co2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start measurement and update internal state</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_n2o_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_n2o_o2_continuous_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_n2o_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_n2o_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start measurement and update internal state</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_co2_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_co2_o2_continuous_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_co2_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_co2_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start measurement and update internal state</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data_raw">
+<span class="sig-name descname"><span class="pre">read_measurement_data_raw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_measurement_data_raw"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data_raw" title="Permalink to this definition"></a></dt>
+<dd><p>Rename overwritten function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return flow</dt>
+<dd class="field-odd"><p>Calibrated flow signal.</p>
+</dd>
+<dt class="field-even">Return temperature</dt>
+<dd class="field-even"><p>Calibrated temperature.</p>
+</dd>
+<dt class="field-odd">Return status_word</dt>
+<dd class="field-odd"><p>Gives information about the measurement command that is currently running, information on the currently selected
+averaging mode, and the defined gas concentration of the current measurement command.
+A detailed description of the <em>status_word</em> can be found in the data sheet.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data">
+<span class="sig-name descname"><span class="pre">read_measurement_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.read_measurement_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.read_measurement_data" title="Permalink to this definition"></a></dt>
+<dd><p>Read measurement data and apply appropriate scaling.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return a_flow</dt>
+<dd class="field-odd"><p>This signal represents the mesured flow. It is scaled with the corresponding scaling factor and
+offset</p>
+</dd>
+<dt class="field-even">Return a_temperature</dt>
+<dd class="field-even"><p>Measured temperature in degrees celsius. The raw value is scaled appropriately.</p>
+</dd>
+<dt class="field-odd">Return a_status_word</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration">
+<span class="sig-name descname"><span class="pre">update_concentration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.update_concentration"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.update_concentration" title="Permalink to this definition"></a></dt>
+<dd><p>Configure and apply new concentration value.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Fraction value</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartAirContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+</section>
+<section id="module-sensirion_i2c_sfm_sf06.commands">
+<span id="commands"></span><h3>Commands<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.commands" title="Permalink to this headline"></a></h3>
+<p>The transfer classes specify the data that is transferred between host and sensor. The generated transfer classes
+are used by the driver class and not intended for direct use.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ErrorCodeT">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">ErrorCodeT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ErrorCodeT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ErrorCodeT" title="Permalink to this definition"></a></dt>
+<dd><p>An enumeration.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ErrorCodeT.I2C_ERROR">
+<span class="sig-name descname"><span class="pre">I2C_ERROR</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ErrorCodeT.I2C_ERROR" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ErrorCodeT.TIMEOUT">
+<span class="sig-name descname"><span class="pre">TIMEOUT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ErrorCodeT.TIMEOUT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartN2OContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StatusWordT">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StatusWordT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StatusWordT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StatusWordT" title="Permalink to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StatusWordT.command_code">
+<span class="sig-name descname"><span class="pre">command_code</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=12,</span> <span class="pre">width=4)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StatusWordT.command_code" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StatusWordT.exp_smoothing_flag">
+<span class="sig-name descname"><span class="pre">exp_smoothing_flag</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=11,</span> <span class="pre">width=1)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StatusWordT.exp_smoothing_flag" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StatusWordT.avg_mode_flag">
+<span class="sig-name descname"><span class="pre">avg_mode_flag</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=10,</span> <span class="pre">width=1)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StatusWordT.avg_mode_flag" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StatusWordT.gas_conc">
+<span class="sig-name descname"><span class="pre">gas_conc</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=0,</span> <span class="pre">width=10)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StatusWordT.gas_conc" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartCO2ContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.FlowUnitT">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">FlowUnitT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">int_value</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#FlowUnitT"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.FlowUnitT" title="Permalink to this definition"></a></dt>
+<dd><dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.FlowUnitT.prefix">
+<span class="sig-name descname"><span class="pre">prefix</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=0,</span> <span class="pre">width=3)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.FlowUnitT.prefix" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.FlowUnitT.time_base">
+<span class="sig-name descname"><span class="pre">time_base</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=4,</span> <span class="pre">width=4)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.FlowUnitT.time_base" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.FlowUnitT.unit">
+<span class="sig-name descname"><span class="pre">unit</span></span><em class="property"> <span class="pre">=</span> <span class="pre">BitField(offset=8,</span> <span class="pre">width=4)</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.FlowUnitT.unit" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartAirO2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirO2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartO2ContinuousMeasurement</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartO2ContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both O₂ flow and temperature and provides a status word. All three measurement results can
+be read out through one single I2C read when the continuous measurement is running. The specific command code used for the
+start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM3003</p></li>
+<li><p>SFM4300</p></li>
+<li><p>SFM3119</p></li>
+<li><p>SFM3013</p></li>
+<li><p>SFM3019</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13827</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartO2ContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartO2ContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartN2OO2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OO2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OO2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartAirContinuousMeasurement</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both Air flow and temperature and provides a status word. All three measurement results can
+be read out through one single I2C read when the continuous measurement is running. The specific command code used for the
+start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM3003</p></li>
+<li><p>SFM4300</p></li>
+<li><p>SFM3119</p></li>
+<li><p>SFM3013</p></li>
+<li><p>SFM3019</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13832</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StartCO2O2ContinuousMeasurement</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2O2ContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2O2ContinuousMeasurement.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartN2OContinuousMeasurement</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both N₂O (<em>HeOx for SMF3012</em>) flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running. The specific command code used
+for the start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow
+signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+<li><p>SFM3013 (HeOx)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13845</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadMeasurementData</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadMeasurementData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartCO2ContinuousMeasurement</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2ContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring both CO₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13854</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2ContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2ContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">UpdateConcentrationSet</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>volume_fraction</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationSet.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartAirO2ContinuousMeasurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirO2ContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring the Air/O₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM3003</p></li>
+<li><p>SFM4300</p></li>
+<li><p>SFM3119</p></li>
+<li><p>SFM3013</p></li>
+<li><p>SFM3019</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13874</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartAirO2ContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartAirO2ContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">UpdateConcentrationActivate</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationActivate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartN2OO2ContinuousMeasurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OO2ContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+<li><p>SFM3013 (HeOx)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13881</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartN2OO2ContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">StopContinuousMeasurement</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StopContinuousMeasurement"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StartCO2O2ContinuousMeasurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2O2ContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor starts measuring the  CO₂ / O₂ flow and temperature and provides a status word. All three measurement results
+can be read out through one single I2C read when the continuous measurement is running.
+The specific command code used for the start continuous measurement command selects the calibrated gas or binary
+gas mixture (lookup table) for the flow signal.</p>
+<dl class="simple">
+<dt>Supported by products:</dt><dd><ul class="simple">
+<li><p>SFM4300</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13894</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StartCO2O2ContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StartCO2O2ContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ConfigureAveraging</code><span class="sig-paren">(</span><em>average_window</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ConfigureAveraging"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>average_window</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ConfigureAveraging.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">ReadMeasurementData</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadMeasurementData"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData" title="Permalink to this definition"></a></dt>
+<dd><p>After the command <em>start_xx_continuous_measurement</em> has been sent, the chip continuously measures and updates the
+measurement results.
+New results (flow, temperature, and status word) can be read continuously with this command.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadMeasurementData.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.rx">
+<span class="sig-name descname"><span class="pre">rx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.RxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadMeasurementData.rx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadScaleOffsetUnit</code><span class="sig-paren">(</span><em>command_code</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetUnit"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>command_code</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetUnit.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">UpdateConcentrationSet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationSet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet" title="Permalink to this definition"></a></dt>
+<dd><p>Together with the instruction <em>update_concentration_activate</em> this instruction allows to update the concentration
+of a binary gas mixture dynamically, i.e. without exiting the running measurement mode.
+This first instruction transmits the new concentration value to the flow sensor.
+This instruction refers to <em>Transmit concentration</em>. For more details see data-sheet section <em>Update Concentration</em></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">57725</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationSet.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationSet.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.EnterSleep">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">EnterSleep</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#EnterSleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.EnterSleep.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">UpdateConcentrationActivate</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationActivate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate" title="Permalink to this definition"></a></dt>
+<dd><p>By executing this instruction the previously with <em>update_concentration_set</em> set value becomes active.
+The instruction resets the I2C address pointer to the regular result output buffer such that the measurement
+data as described by the transfer read_measurement_data are optained upon a subsequent read.
+This instruction refers to <em>Reset-i2c address pointer</em>. For more details see data-sheet section <em>Update Concentration</em></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">57344</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#UpdateConcentrationActivate.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.UpdateConcentrationActivate.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.ExitSleep">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ExitSleep</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ExitSleep"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.ExitSleep.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">StopContinuousMeasurement</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StopContinuousMeasurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement" title="Permalink to this definition"></a></dt>
+<dd><p>This command stops the continuous measurement and puts
+the sensor in idle mode. After it receives the stop command,
+the sensor needs up to 0.5ms to power down the heater, enter
+idle mode and be receptive for a new command.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">16377</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#StopContinuousMeasurement.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.StopContinuousMeasurement.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.commands.</code><code class="descname">ReadProductIdentifier</code><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadProductIdentifier"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.__init__">
-<code class="descname">__init__</code><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">ConfigureAveraging</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">average_window</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ConfigureAveraging"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging" title="Permalink to this definition"></a></dt>
+<dd><dl class="simple">
+<dt>This command configures the sensor’s averaging mode:</dt><dd><ul class="simple">
+<li><p>N=0 (default): average-until-read mode (c.f. Sec. 3)</p></li>
+<li><p>1≤N≤128: fixed-N averaging mode. N is the number of internal
+measurements that are averaged for one returned
+measurement value (i.e. the average over N flow samples,
+where N = CmdArgument, c.f. Sec. 3).</p></li>
+</ul>
+</dd>
+</dl>
+<p>The configured averaging mode will be used for flow measurements
+until a reset or re-execution of this command is performed. After a
+reset, averaging is set to average-until-read mode (i.e. N is set to 0).
+The highest averaging number allowed is 128. If a higher number is
+used in the command argument, it will be overruled by the maximal
+value of 128 samples to average.
+If no averaging is desired, set N to 1.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13930</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ConfigureAveraging.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ConfigureAveraging.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-</div>
-<div class="section" id="module-sensirion_i2c_sfm_sf06.response_types">
-<span id="response-types"></span><h3>Response Types<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.response_types" title="Permalink to this headline">¶</a></h3>
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.response_types.Temperature">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.response_types.</code><code class="descname">Temperature</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Temperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Temperature" title="Permalink to this definition">¶</a></dt>
-<dd><p>Represents a temperature measurement value</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>scaled temperature value</strong> (<em>int</em>) – The read value as it is returned from the sensor.</td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.response_types.Temperature.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Temperature.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Temperature.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Creates an instance from the received raw data.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">ReadScaleOffsetUnit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">command_code</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetUnit"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit" title="Permalink to this definition"></a></dt>
+<dd><p>This command provides the scale factor and offset to convert flow readings into physical units. The scale factor
+and offset are specific to the calibrated gas / gas mixture and its corresponding lookup table used for the
+flow measurement. Therefore, the gas / gas mixture needs to be specified in the command argument by the command code
+of the corresponding start continuous measurement. For detailed information see data-sheet.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13921</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadScaleOffsetUnit.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.rx">
+<span class="sig-name descname"><span class="pre">rx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.RxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadScaleOffsetUnit.rx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-<dl class="class">
-<dt id="sensirion_i2c_sfm_sf06.response_types.Flow">
-<em class="property">class </em><code class="descclassname">sensirion_i2c_sfm_sf06.response_types.</code><code class="descname">Flow</code><span class="sig-paren">(</span><em>value</em>, <em>scaling=1</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Flow"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Flow" title="Permalink to this definition">¶</a></dt>
-<dd><p>Represents a flow measurement value</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>scaled flow value</strong> (<em>int</em>) – The read value as it is returned from the sensor.</td>
-</tr>
-</tbody>
-</table>
-<dl class="method">
-<dt id="sensirion_i2c_sfm_sf06.response_types.Flow.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>value</em>, <em>scaling=1</em>, <em>offset=0</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/response_types.html#Flow.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.response_types.Flow.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>Creates an instance from the received raw data.</p>
-</dd></dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.EnterSleep">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">EnterSleep</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#EnterSleep"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep" title="Permalink to this definition"></a></dt>
+<dd><p>In sleep mode the sensor uses a minimum amount of power. The mode can only be entered from idle mode, i.e. when the
+sensor is not performing measurements.
+This mode is particularly useful for battery operated devices. To minimize the current in this mode, the complexity of the sleep
+mode circuit has been reduced as much as possible, which is mainly reflected by the way the sensor exits the sleep mode. In
+sleep mode the sensor cannot be soft reset.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.EnterSleep.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">13943</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.EnterSleep.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#EnterSleep.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.EnterSleep.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.EnterSleep.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
 
 </dd></dl>
 
-</div>
-</div>
-</div>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ExitSleep">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">ExitSleep</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ExitSleep"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep" title="Permalink to this definition"></a></dt>
+<dd><p>The sensor exits the sleep mode and enters the idle mode when
+it receives the valid I2C address and a write bit (‘0’).
+Note that the I2C address is not acknowledged. It is necessary to
+poll the sensor to see whether the sensor has received the
+address and has woken up. This should take typically 16ms.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ExitSleep.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">0</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ExitSleep.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ExitSleep.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ExitSleep.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ExitSleep.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.commands.</span></span><span class="sig-name descname"><span class="pre">ReadProductIdentifier</span></span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadProductIdentifier"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier" title="Permalink to this definition"></a></dt>
+<dd><p>This command allows to read product identifier and the serial number.
+The command can only be executed from the idle mode, i.e. when the sensor is not performing measurements</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.CMD_ID">
+<span class="sig-name descname"><span class="pre">CMD_ID</span></span><em class="property"> <span class="pre">=</span> <span class="pre">57602</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.CMD_ID" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.pack">
+<span class="sig-name descname"><span class="pre">pack</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/commands.html#ReadProductIdentifier.pack"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.pack" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.tx">
+<span class="sig-name descname"><span class="pre">tx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.TxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.tx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.rx">
+<span class="sig-name descname"><span class="pre">rx</span></span><em class="property"> <span class="pre">=</span> <span class="pre">&lt;sensirion_driver_adapters.rx_tx_data.RxData</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#sensirion_i2c_sfm_sf06.commands.ReadProductIdentifier.rx" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-sensirion_i2c_sfm_sf06.result_types">
+<span id="result-types"></span><h3>Result Types<a class="headerlink" href="#module-sensirion_i2c_sfm_sf06.result_types" title="Permalink to this headline"></a></h3>
+<p>The signal classes specify transformations of the raw sensor signals into a meaningful units.
+The generated signal types are used by the driver class and not intended for direct use.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.result_types.SignalTemperature">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.result_types.</span></span><span class="sig-name descname"><span class="pre">SignalTemperature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">temperature_raw</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/result_types.html#SignalTemperature"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.result_types.SignalTemperature" title="Permalink to this definition"></a></dt>
+<dd><p>Measured temperature in degrees celsius. The raw value is scaled appropriately.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.result_types.SignalTemperature.value">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#sensirion_i2c_sfm_sf06.result_types.SignalTemperature.value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.result_types.SignalFlow">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">sensirion_i2c_sfm_sf06.result_types.</span></span><span class="sig-name descname"><span class="pre">SignalFlow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flow_raw</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flow_scale_factor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flow_offset</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/result_types.html#SignalFlow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.result_types.SignalFlow" title="Permalink to this definition"></a></dt>
+<dd><p>This signal represents the mesured flow. It is scaled with the corresponding scaling factor and
+offset</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.result_types.SignalFlow.value">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">value</span></span><a class="headerlink" href="#sensirion_i2c_sfm_sf06.result_types.SignalFlow.value" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-      
-        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quick Start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="build-documentation.html" class="btn btn-neutral float-left" title="Build documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2021 Sensirion AG, Switzerland
-
-    </p>
+    <p>&#169; Copyright 2023 Sensirion AG, Switzerland.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-<div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-        <span class="fa fa-book"> Other Versions</span>
-        v: master
-        <span class="fa fa-caret-down"></span>
-    </span>
-    <div class="rst-other-versions">
-        <dl>
-            <dt>Tags</dt>
-            <dd><a href="0.1.0/api.html">0.1.0</a></dd>
-        </dl>
-        <dl>
-            <dt>Branches</dt>
-            <dd><a href="master/api.html">master</a></dd>
-        </dl>
-    </div>
-</div>
-
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

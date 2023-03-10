@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quick Start &mdash; sensirion_i2c_sfm_sf06 1.0.0 documentation</title>
+  <title>Run tests &mdash; sensirion_i2c_sfm_sf06 1.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Execute measurements with SensorBridge" href="execute-measurements.html" />
-    <link rel="prev" title="Installation" href="installation.html" /> 
+    <link rel="next" title="Build documentation" href="build-documentation.html" />
+    <link rel="prev" title="Development" href="development.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,12 +44,12 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="execute-measurements.html">Execute measurements with SensorBridge</a></li>
-<li class="toctree-l2"><a class="reference internal" href="execute-measurements.html#execute-measurements-using-internal-linux-i2c-driver">Execute measurements using internal Linux I²C driver</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick Start</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="development.html">Development</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Run tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="build-documentation.html">Build documentation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
 </ul>
 
@@ -67,9 +67,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Quick Start</li>
+          <li><a href="development.html">Development</a> &raquo;</li>
+      <li>Run tests</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/run-tests.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -77,28 +78,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="quick-start">
-<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline"></a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="execute-measurements.html">Execute measurements with SensorBridge</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="execute-measurements.html#example-script">Example script</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="execute-measurements.html#execute-measurements-using-internal-linux-i2c-driver">Execute measurements using internal Linux I²C driver</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="execute-measurements.html#id1">Example script</a></li>
-</ul>
-</li>
-</ul>
+  <section id="run-tests">
+<h1>Run tests<a class="headerlink" href="#run-tests" title="Permalink to this headline"></a></h1>
+<p>Unit tests can be run with <a class="reference external" href="https://pytest.org">pytest</a>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>test<span class="o">]</span><span class="w">                       </span><span class="c1"># Install requirements</span>
+pytest<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;not needs_device&quot;</span><span class="w">                 </span><span class="c1"># Run tests without hardware</span>
+pytest<span class="w">                                       </span><span class="c1"># Run all tests</span>
+pytest<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;needs_device&quot;</span><span class="w">                     </span><span class="c1"># Run all tests for SFM-SF06</span>
+</pre></div>
 </div>
+<p>The tests with the marker <cite>needs_device</cite> have following requirements:</p>
+<ul class="simple">
+<li><p>The SFM-SF06 sensor must be connected to a
+<a class="reference external" href="https://sensirion.com/products/catalog/SEK-SensorBridge/">SensorBridge</a> on port 1.</p></li>
+<li><p>Pass the serial port where the SensorBridge is connected with
+<cite>–serial-port</cite>, e.g. <cite>pytest –serial-port=COM7</cite></p></li>
+<li><p>The SensorBridge must have default settings (baudrate 460800, address 0)</p></li>
+</ul>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="execute-measurements.html" class="btn btn-neutral float-right" title="Execute measurements with SensorBridge" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="development.html" class="btn btn-neutral float-left" title="Development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="build-documentation.html" class="btn btn-neutral float-right" title="Build documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
