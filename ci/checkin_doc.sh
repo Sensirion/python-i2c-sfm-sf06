@@ -7,10 +7,20 @@ set -euv -o pipefail
 git clone "git@gitlab:${CI_PROJECT_PATH}.git" html
 cd html
 git checkout gh-pages
-rm empty.txt
+rm -f empty.txt
+rm -f *.html
+rm -f *.js
+rm -rf _*
 cd ..
-mv docs/_build/html/* html/
+# make sure to copy .nojekyll
+cp -rf public/.[!.]*  public/* html
 cd html
 git add .
-git commit -m"Automatic doc update:${CI_COMMIT_SHORT_SHA}"
+
+if git diff-index --quiet HEAD --
+then
+  exit 0
+fi
+
+git commit -m"Automatic doc update: ${CI_COMMIT_SHORT_SHA}"
 git push
