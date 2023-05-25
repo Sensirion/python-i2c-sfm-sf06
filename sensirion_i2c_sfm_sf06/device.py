@@ -47,9 +47,11 @@ class SfmSf06DeviceBase:
 
         Supported by products:
           - SFM3003
-          - SFM4300
+          - SFM4300-20
+          - SFM4300-50
           - SFM3119
-          - SFM3013
+          - SFM3013-300-CL
+          - SFM3013-300-CLM
           - SFM3019
         """
         transfer = StartO2ContinuousMeasurement()
@@ -63,9 +65,11 @@ class SfmSf06DeviceBase:
 
         Supported by products:
           - SFM3003
-          - SFM4300
+          - SFM4300-20
+          - SFM4300-50
           - SFM3119
-          - SFM3013
+          - SFM3013-300-CL
+          - SFM3013-300-CLM
           - SFM3019
         """
         transfer = StartAirContinuousMeasurement()
@@ -73,14 +77,14 @@ class SfmSf06DeviceBase:
 
     def start_n2o_continuous_measurement(self):
         """
-        The sensor starts measuring both N₂O (*HeOx for SMF3012*) flow and temperature and provides a status word. All three measurement results
+        The sensor starts measuring both N₂O (*HeOx for SMF3013-300-CLM*) flow and temperature and provides a status word. All three measurement results
         can be read out through one single I2C read when the continuous measurement is running. The specific command code used
         for the start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow
         signal.
 
         Supported by products:
-          - SFM4300
-          - SFM3013 (HeOx)
+          - SFM4300-20
+          - SFM3013-300-CLM (HeOx)
         """
         transfer = StartN2OContinuousMeasurement()
         return execute_transfer(self._channel, transfer)
@@ -93,7 +97,7 @@ class SfmSf06DeviceBase:
         gas mixture (lookup table) for the flow signal.
 
         Supported by products:
-          - SFM4300
+          - SFM4300-20
         """
         transfer = StartCO2ContinuousMeasurement()
         return execute_transfer(self._channel, transfer)
@@ -107,9 +111,11 @@ class SfmSf06DeviceBase:
 
         Supported by products:
           - SFM3003
-          - SFM4300
+          - SFM4300-20
+          - SFM4300-50
           - SFM3119
-          - SFM3013
+          - SFM3013-300-CL
+          - SFM3013-300-CLM
           - SFM3019
 
         :param volume_fraction:
@@ -120,14 +126,14 @@ class SfmSf06DeviceBase:
 
     def start_n2o_o2_continuous_measurement(self, volume_fraction):
         """
-        The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three measurement results
-        can be read out through one single I2C read when the continuous measurement is running.
+        The sensor starts measuring the  N₂O / O₂ (*HeOx for SMF3013-300-CLM*) flow and temperature and provides a status word. All
+        three measurement results can be read out through one single I2C read when the continuous measurement is running.
         The specific command code used for the start continuous measurement command selects the calibrated gas or binary
         gas mixture (lookup table) for the flow signal.
 
         Supported by products:
-          - SFM4300
-          - SFM3013 (HeOx)
+          - SFM4300-20
+          - SFM3013-300-CLM (HeOx)
 
         :param volume_fraction:
             Volume fraction of O₂ in ‰.
@@ -143,7 +149,7 @@ class SfmSf06DeviceBase:
         gas mixture (lookup table) for the flow signal.
 
         Supported by products:
-          - SFM4300
+          - SFM4300-20
 
         :param volume_fraction:
             Volume fraction of O₂ in ‰.
