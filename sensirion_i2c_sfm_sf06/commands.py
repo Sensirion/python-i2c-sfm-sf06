@@ -49,9 +49,11 @@ class StartO2ContinuousMeasurement(Transfer):
 
     Supported by products:
       - SFM3003
-      - SFM4300
+      - SFM4300-20
+      - SFM4300-50
       - SFM3119
-      - SFM3013
+      - SFM3013-300-CL
+      - SFM3013-300-CLM
       - SFM3019
     """
 
@@ -71,9 +73,11 @@ class StartAirContinuousMeasurement(Transfer):
 
     Supported by products:
       - SFM3003
-      - SFM4300
+      - SFM4300-20
+      - SFM4300-50
       - SFM3119
-      - SFM3013
+      - SFM3013-300-CL
+      - SFM3013-300-CLM
       - SFM3019
     """
 
@@ -87,14 +91,14 @@ class StartAirContinuousMeasurement(Transfer):
 
 class StartN2OContinuousMeasurement(Transfer):
     """
-    The sensor starts measuring both N₂O (*HeOx for SMF3012*) flow and temperature and provides a status word. All three measurement results
+    The sensor starts measuring both N₂O (*HeOx for SMF3013-300-CLM*) flow and temperature and provides a status word. All three measurement results
     can be read out through one single I2C read when the continuous measurement is running. The specific command code used
     for the start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow
     signal.
 
     Supported by products:
-      - SFM4300
-      - SFM3013 (HeOx)
+      - SFM4300-20
+      - SFM3013-300-CLM (HeOx)
     """
 
     CMD_ID = 0x3615
@@ -113,7 +117,7 @@ class StartCO2ContinuousMeasurement(Transfer):
     gas mixture (lookup table) for the flow signal.
 
     Supported by products:
-      - SFM4300
+      - SFM4300-20
     """
 
     CMD_ID = 0x361e
@@ -133,9 +137,11 @@ class StartAirO2ContinuousMeasurement(Transfer):
 
     Supported by products:
       - SFM3003
-      - SFM4300
+      - SFM4300-20
+      - SFM4300-50
       - SFM3119
-      - SFM3013
+      - SFM3013-300-CL
+      - SFM3013-300-CLM
       - SFM3019
     """
 
@@ -152,14 +158,14 @@ class StartAirO2ContinuousMeasurement(Transfer):
 
 class StartN2OO2ContinuousMeasurement(Transfer):
     """
-    The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three measurement results
-    can be read out through one single I2C read when the continuous measurement is running.
+    The sensor starts measuring the  N₂O / O₂ (*HeOx for SMF3013-300-CLM*) flow and temperature and provides a status word. All
+    three measurement results can be read out through one single I2C read when the continuous measurement is running.
     The specific command code used for the start continuous measurement command selects the calibrated gas or binary
     gas mixture (lookup table) for the flow signal.
 
     Supported by products:
-      - SFM4300
-      - SFM3013 (HeOx)
+      - SFM4300-20
+      - SFM3013-300-CLM (HeOx)
     """
 
     CMD_ID = 0x3639
@@ -181,7 +187,7 @@ class StartCO2O2ContinuousMeasurement(Transfer):
     gas mixture (lookup table) for the flow signal.
 
     Supported by products:
-      - SFM4300
+      - SFM4300-20
     """
 
     CMD_ID = 0x3646
