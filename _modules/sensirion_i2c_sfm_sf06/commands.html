@@ -122,9 +122,11 @@
 
 <span class="sd">    Supported by products:</span>
 <span class="sd">      - SFM3003</span>
-<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM4300-20</span>
+<span class="sd">      - SFM4300-50</span>
 <span class="sd">      - SFM3119</span>
-<span class="sd">      - SFM3013</span>
+<span class="sd">      - SFM3013-300-CL</span>
+<span class="sd">      - SFM3013-300-CLM</span>
 <span class="sd">      - SFM3019</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -144,9 +146,11 @@
 
 <span class="sd">    Supported by products:</span>
 <span class="sd">      - SFM3003</span>
-<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM4300-20</span>
+<span class="sd">      - SFM4300-50</span>
 <span class="sd">      - SFM3119</span>
-<span class="sd">      - SFM3013</span>
+<span class="sd">      - SFM3013-300-CL</span>
+<span class="sd">      - SFM3013-300-CLM</span>
 <span class="sd">      - SFM3019</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -160,14 +164,14 @@
 
 <div class="viewcode-block" id="StartN2OContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartN2OContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    The sensor starts measuring both N₂O (*HeOx for SMF3012*) flow and temperature and provides a status word. All three measurement results</span>
+<span class="sd">    The sensor starts measuring both N₂O (*HeOx for SMF3013-300-CLM*) flow and temperature and provides a status word. All three measurement results</span>
 <span class="sd">    can be read out through one single I2C read when the continuous measurement is running. The specific command code used</span>
 <span class="sd">    for the start continuous measurement command selects the calibrated gas or binary gas mixture (lookup table) for the flow</span>
 <span class="sd">    signal.</span>
 
 <span class="sd">    Supported by products:</span>
-<span class="sd">      - SFM4300</span>
-<span class="sd">      - SFM3013 (HeOx)</span>
+<span class="sd">      - SFM4300-20</span>
+<span class="sd">      - SFM3013-300-CLM (HeOx)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3615</span>
@@ -186,7 +190,7 @@
 <span class="sd">    gas mixture (lookup table) for the flow signal.</span>
 
 <span class="sd">    Supported by products:</span>
-<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM4300-20</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x361e</span>
@@ -206,9 +210,11 @@
 
 <span class="sd">    Supported by products:</span>
 <span class="sd">      - SFM3003</span>
-<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM4300-20</span>
+<span class="sd">      - SFM4300-50</span>
 <span class="sd">      - SFM3119</span>
-<span class="sd">      - SFM3013</span>
+<span class="sd">      - SFM3013-300-CL</span>
+<span class="sd">      - SFM3013-300-CLM</span>
 <span class="sd">      - SFM3019</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -225,14 +231,14 @@
 
 <div class="viewcode-block" id="StartN2OO2ContinuousMeasurement"><a class="viewcode-back" href="../../api.html#sensirion_i2c_sfm_sf06.commands.StartN2OO2ContinuousMeasurement">[docs]</a><span class="k">class</span> <span class="nc">StartN2OO2ContinuousMeasurement</span><span class="p">(</span><span class="n">Transfer</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    The sensor starts measuring the  N₂O / O₂ flow and temperature and provides a status word. All three measurement results</span>
-<span class="sd">    can be read out through one single I2C read when the continuous measurement is running.</span>
+<span class="sd">    The sensor starts measuring the  N₂O / O₂ (*HeOx for SMF3013-300-CLM*) flow and temperature and provides a status word. All</span>
+<span class="sd">    three measurement results can be read out through one single I2C read when the continuous measurement is running.</span>
 <span class="sd">    The specific command code used for the start continuous measurement command selects the calibrated gas or binary</span>
 <span class="sd">    gas mixture (lookup table) for the flow signal.</span>
 
 <span class="sd">    Supported by products:</span>
-<span class="sd">      - SFM4300</span>
-<span class="sd">      - SFM3013 (HeOx)</span>
+<span class="sd">      - SFM4300-20</span>
+<span class="sd">      - SFM3013-300-CLM (HeOx)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3639</span>
@@ -254,7 +260,7 @@
 <span class="sd">    gas mixture (lookup table) for the flow signal.</span>
 
 <span class="sd">    Supported by products:</span>
-<span class="sd">      - SFM4300</span>
+<span class="sd">      - SFM4300-20</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">CMD_ID</span> <span class="o">=</span> <span class="mh">0x3646</span>
