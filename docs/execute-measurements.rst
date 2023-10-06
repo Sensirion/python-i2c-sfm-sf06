@@ -16,11 +16,11 @@ execute a simple measurement.
 5. Run the example script from the root of the repository.
 
    By default the script assumes the SensorBridge is connected to :code:`COM1` serial port. If this is different on your system,
-   pass the port in use with the :code:`--serial_port` parameter as outlined below.
+   pass the port in use with the :code:`--serial-port` parameter as outlined below.
 
    .. sourcecode:: bash
 
-        python examples/example_usage_sensorbridge_sfm_sf06.py --serial_port <your COM port>
+        python examples/example_usage_sensorbridge_sfm_sf06.py --serial-port <your COM port>
 
 
 .. _Sensirion SEK-SensorBridge: https://developer.sensirion.com/sensirion-products/sek-sensorbridge/
@@ -43,11 +43,11 @@ How this can be done is shown in the following.
 3. Run the example script from the root of the repository.
 
    By default the script assumes you have the sensor connected to :code:`/dev/i2c-1`.
-   If this is different on your system, pass the port in use with the :code:`--i2c_port` parameter as outlined below.
+   If this is different on your system, pass the port in use with the :code:`--i2c-port` parameter as outlined below.
 
    .. sourcecode:: bash
 
-      python examples/example_usage_sensorbridge_sfm_sf06.py --i2c_port <your I2C port>
+      python examples/example_usage_linux_sfm_sf06.py --i2c-port <your I2C port>
 
 Example script
 ~~~~~~~~~~~~~~

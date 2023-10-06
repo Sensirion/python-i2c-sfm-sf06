@@ -11,8 +11,8 @@ python_requires = '>=3.6, <4'
 
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
-    'sensirion-i2c-driver~=1.0.0',
-    'sensirion-driver-adapters~=2.1,>=2.1.4',
+    'sensirion-i2c-driver>=1.0.0,<2.0',
+    'sensirion-driver-adapters>=2.1.8,<3.0',
     'sensirion-driver-support-types~=0.2.0',
     'sensirion-shdlc-sensorbridge~=0.1.1'
 ]
@@ -42,9 +42,7 @@ else:
 
 # Use README.rst and CHANGELOG.rst as package description
 root_path = os.path.dirname(__file__)
-readme = open(os.path.join(root_path, 'README.rst')).read()
-changelog = open(os.path.join(root_path, 'CHANGELOG.rst')).read()
-long_description = readme.strip() + "\n\n" + changelog.strip() + "\n"
+long_description = open(os.path.join(root_path, 'README.md')).read()
 
 setup(
     name='sensirion_i2c_sfm_sf06',
@@ -60,9 +58,14 @@ setup(
         SFM3003
         SFM3013
         SFM3019""",
-    url='https://sensirion.github.io/python-i2c-sfm-sf06/',
+    project_urls={
+        "Documentation": "https://sensirion.github.io/python-i2c-sfm-sf06",
+        "Repository": "https://github.com/Sensirion/python-i2c-sfm-sf06",
+        "Changelog": "https://github.com/Sensirion/python-i2c-sfm-sf06/blob/master/CHANGELOG.rst",
+    },
     packages=find_packages(exclude=['tests', 'tests.*']),
     long_description=long_description,
+    long_description_content_type='text/markdown',
     python_requires=python_requires,
     install_requires=install_requires,
     extras_require=extras_require,

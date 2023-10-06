@@ -1,6 +1,11 @@
 CHANGELOG
 ---------
 
+2.0.0
+:::::
+- Update sensor model and generated driver to latest release
+
+
 1.0.0
 :::::
 - Automatically generated driver:
@@ -12,3 +17,4 @@ CHANGELOG
 0.1.0
 :::::
 - Initial release of SFM-SF06 I2C driver
+
