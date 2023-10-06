@@ -61,6 +61,7 @@ html_theme = 'sphinx_rtd_theme'
 
 html_favicon = 'favicon.ico'
 
+# -- Extension configuration -------------------------------------------------
 autodoc_default_options = {
     'members': None,
     'member-order': 'bysource',
@@ -80,7 +81,6 @@ def setup(app):
 
 
 scv_whitelist_branches = ('master',)
-
 
 scv_grm_exclude = ('.gitignore', '.nojekyll')
 

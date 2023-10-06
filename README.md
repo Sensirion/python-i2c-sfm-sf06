@@ -2,7 +2,9 @@
 
 This repository contains the Python driver to communicate with a Sensirion sensor of the SFM-SF06 family over I2C. 
 
-<center><img src="images/SFM4300.png" width="300px"></center>
+<img src="https://raw.githubusercontent.com/Sensirion/python-i2c-sfm-sf06/master/images/SFM4300.png"
+    width="300px" alt="SFM-SF06 picture">
+
 
 Click [here](https://sensirion.com/products/product-categories/gas-flow-sensors/) to learn more about the Sensirion SFM-SF06 sensor family.
 
@@ -34,14 +36,15 @@ For special setups you find the sensor pinout in the section below.
 
 <details><summary>Sensor pinout</summary>
 <p>
-<img src="images/pinout_SFM4300.png" width="300px">
+<img src="https://raw.githubusercontent.com/Sensirion/python-i2c-sfm-sf06/master/images/pinout_SFM4300.png"
+     width="300px" alt="sensor wiring picture">
 
 | *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
 |-------|---------------|:------:|----------------|------------|
 | 1 |  | ADDR |  | see data sheet section 4.1
 | 2 |  | SDA | I2C: Serial data input / output | Serial data, bidirectional
 | 3 |  | GND | Ground | 
-| 4 |  | VDD | Supply Voltage | 3.0 to 5.0V
+| 4 |  | VDD | Supply Voltage | 3.0V to 5.0V
 | 5 |  | SCL | I2C: Serial clock input | 
 | 6 |  | IRQn |  | Active low. see data sheet section 3.3
 
