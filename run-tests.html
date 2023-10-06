@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Run tests &mdash; sensirion_i2c_sfm_sf06 1.0.0 documentation</title>
+  <title>Run tests &mdash; sensirion_i2c_sfm_sf06 2.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
@@ -32,7 +32,7 @@
             <a href="index.html" class="icon icon-home"> sensirion_i2c_sfm_sf06
           </a>
               <div class="version">
-                1.0.0
+                2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -82,19 +82,22 @@
 <h1>Run tests<a class="headerlink" href="#run-tests" title="Permalink to this headline"></a></h1>
 <p>Unit tests can be run with <a class="reference external" href="https://pytest.org">pytest</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.<span class="o">[</span>test<span class="o">]</span><span class="w">                       </span><span class="c1"># Install requirements</span>
-pytest<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;not needs_device&quot;</span><span class="w">                 </span><span class="c1"># Run tests without hardware</span>
-pytest<span class="w">                                       </span><span class="c1"># Run all tests</span>
-pytest<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;needs_device&quot;</span><span class="w">                     </span><span class="c1"># Run all tests for SFM-SF06</span>
 </pre></div>
 </div>
-<p>The tests with the marker <cite>needs_device</cite> have following requirements:</p>
-<ul class="simple">
-<li><p>The SFM-SF06 sensor must be connected to a
-<a class="reference external" href="https://sensirion.com/products/catalog/SEK-SensorBridge/">SensorBridge</a> on port 1.</p></li>
-<li><p>Pass the serial port where the SensorBridge is connected with
-<cite>–serial-port</cite>, e.g. <cite>pytest –serial-port=COM7</cite></p></li>
-<li><p>The SensorBridge must have default settings (baudrate 460800, address 0)</p></li>
-</ul>
+<p>We provide a mock implementation that allows you to execute the tests for SFM-SF06 without hardware.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest<span class="w">                                       </span><span class="c1"># Run all tests for SFM-SF06 using a driver mock</span>
+</pre></div>
+</div>
+<p>To use the real hardware you have to connect your SFM-SF06 sensor to a
+<a class="reference external" href="https://sensirion.com/products/catalog/SEK-SensorBridge/">SensorBridge</a> on port 1. Assuming the SensorBridge is
+attached to COM1 you can start the tests with the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pytest<span class="w"> </span>--serial-port<span class="o">=</span>COM1<span class="w">                    </span><span class="c1"># Run all tests for SFM-SF06 on the sensor attached to COM1</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The SensorBridge must have default settings (baudrate 460800, address 0)</p>
+</div>
 </section>
 
 

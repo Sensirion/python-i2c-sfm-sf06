@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Documentation &mdash; sensirion_i2c_sfm_sf06 1.0.0 documentation</title>
+  <title>API Documentation &mdash; sensirion_i2c_sfm_sf06 2.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
@@ -31,7 +31,7 @@
             <a href="index.html" class="icon icon-home"> sensirion_i2c_sfm_sf06
           </a>
               <div class="version">
-                1.0.0
+                2.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -121,6 +121,11 @@ start continuous measurement command selects the calibrated gas or binary gas mi
 </ul>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first measurement result will be available after 12ms. Small accuracy deviations (few % of reading) can occur during
+the first 30ms (including the 12ms)</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -141,6 +146,11 @@ start continuous measurement command selects the calibrated gas or binary gas mi
 </ul>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first measurement result will be available after 12ms. Small accuracy deviations (few % of reading) can occur during
+the first 30ms (including the 12ms)</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -157,6 +167,11 @@ signal.</p>
 </ul>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first measurement result will be available after 12ms. Small accuracy deviations (few % of reading) can occur during the first 30ms
+(including the 12ms)</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -172,6 +187,11 @@ gas mixture (lookup table) for the flow signal.</p>
 </ul>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first measurement result will be available after 12ms. Small accuracy deviations (few % of reading) can occur during
+the first 30ms (including the 12ms)</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -260,6 +280,11 @@ averaging mode, and the defined gas concentration of the current measurement com
 A detailed description of the <em>status_word</em> can be found in the data sheet.</p>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The first measurement result will be available after 12ms. Small accuracy deviations (few % of reading) can occur during
+the first 30ms (including the 12ms)</p>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -274,6 +299,13 @@ This instruction refers to <em>Transmit concentration</em>. For more details see
 <dd class="field-odd"><p><strong>volume_fraction</strong> – Fraction value</p>
 </dd>
 </dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The concentration value must not be updated more than once per millisecond</p></li>
+<li><p>If a concentration value greater than 1000 is passed to the sensor, the measurement mode will stop.</p></li>
+</ul>
+</div>
 </dd></dl>
 
 <dl class="py method">
@@ -283,6 +315,13 @@ This instruction refers to <em>Transmit concentration</em>. For more details see
 The instruction resets the I2C address pointer to the regular result output buffer such that the measurement
 data as described by the transfer read_measurement_data are optained upon a subsequent read.
 This instruction refers to <em>Reset-i2c address pointer</em>. For more details see data-sheet section <em>Update Concentration</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The concentration value must not be updated more than once per millisecond</p></li>
+<li><p>If a concentration value greater than 1000 is passed to the sensor, the measurement mode will stop.</p></li>
+</ul>
+</div>
 </dd></dl>
 
 <dl class="py method">

@@ -7,6 +7,7 @@ SFM-SF06
 SfmSf06Device
 ~~~~~~~~~~~~~
 
+
 .. automodule:: sensirion_i2c_sfm_sf06.device
 
 Commands
