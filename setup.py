@@ -12,7 +12,7 @@ python_requires = '>=3.6, <4'
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
     'sensirion-i2c-driver>=1.0.0,<2.0',
-    'sensirion-driver-adapters>=2.1.8,<3.0',
+    'sensirion-driver-adapters>=2.1.9,<3.0',
     'sensirion-driver-support-types~=0.2.0',
     'sensirion-shdlc-sensorbridge~=0.1.1'
 ]
@@ -40,7 +40,7 @@ if result:
 else:
     raise RuntimeError("Unable to find version string")
 
-# Use README.rst and CHANGELOG.rst as package description
+# Use README.rst and CHANGELOG.md as package description
 root_path = os.path.dirname(__file__)
 long_description = open(os.path.join(root_path, 'README.md')).read()
 
@@ -61,7 +61,7 @@ setup(
     project_urls={
         "Documentation": "https://sensirion.github.io/python-i2c-sfm-sf06",
         "Repository": "https://github.com/Sensirion/python-i2c-sfm-sf06",
-        "Changelog": "https://github.com/Sensirion/python-i2c-sfm-sf06/blob/master/CHANGELOG.rst",
+        "Changelog": "https://github.com/Sensirion/python-i2c-sfm-sf06/blob/master/CHANGELOG.md",
     },
     packages=find_packages(exclude=['tests', 'tests.*']),
     long_description=long_description,
