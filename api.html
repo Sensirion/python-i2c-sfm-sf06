@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>API Documentation &mdash; sensirion_i2c_sfm_sf06 2.0.0 documentation</title>
+  <title>API Documentation &mdash; sensirion_i2c_sfm_sf06 3.0.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
@@ -31,7 +31,7 @@
             <a href="index.html" class="icon icon-home"> sensirion_i2c_sfm_sf06
           </a>
               <div class="version">
-                2.0.0
+                3.0.0
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -306,6 +306,13 @@ This instruction refers to <em>Transmit concentration</em>. For more details see
 <li><p>If a concentration value greater than 1000 is passed to the sensor, the measurement mode will stop.</p></li>
 </ul>
 </div>
+<dl class="field-list">
+<dt class="field-odd">Example</dt>
+<dd class="field-odd"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sensor</span><span class="o">.</span><span class="n">update_concentration_set</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -353,9 +360,14 @@ The highest averaging number allowed is 128. If a higher number is
 used in the command argument, it will be overruled by the maximal
 value of 128 samples to average.
 If no averaging is desired, set N to 1.</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>average_window</strong> – Average window configuration value.</p>
+</dd>
+<dt class="field-even">Example</dt>
+<dd class="field-even"><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sensor</span><span class="o">.</span><span class="n">configure_averaging</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd>
 </dl>
 </dd></dl>
@@ -477,6 +489,17 @@ The command can only be executed from the idle mode, i.e. when the sensor is not
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of O₂ in ‰.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_o2_continuous_measurement">
+<span class="sig-name descname"><span class="pre">start_air_o2_continuous_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">volume_fraction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/sensirion_i2c_sfm_sf06/device.html#SfmSf06Device.start_air_o2_continuous_measurement"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#sensirion_i2c_sfm_sf06.device.SfmSf06Device.start_air_o2_continuous_measurement" title="Permalink to this definition"></a></dt>
+<dd><p>Start measurement and update internal state</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>volume_fraction</strong> – Volume fraction of dioxigen in ‰.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1099,7 +1122,7 @@ offset</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023 Sensirion AG, Switzerland.</p>
+    <p>&#169; Copyright 2024 Sensirion AG, Switzerland.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
