@@ -23,7 +23,7 @@ execute a simple measurement.
         python examples/example_usage_sensorbridge_sfm_sf06.py --serial-port <your COM port>
 
 
-.. _Sensirion SEK-SensorBridge: https://developer.sensirion.com/sensirion-products/sek-sensorbridge/
+.. _Sensirion SEK-SensorBridge: https://developer.sensirion.com/product-support/sek-sensorbridge/
 
 
 Example script
